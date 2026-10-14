@@ -1,0 +1,152 @@
+[
+  {
+    "id": "vector_databases-01-complete",
+    "group": "vector_databases",
+    "kind": "complete"
+  },
+  {
+    "id": "vector_databases-02-clarification",
+    "group": "vector_databases",
+    "kind": "clarification"
+  },
+  {
+    "id": "vector_databases-03-revision",
+    "group": "vector_databases",
+    "kind": "revision"
+  },
+  {
+    "id": "vector_databases-04-unchanged",
+    "group": "vector_databases",
+    "kind": "unchanged"
+  },
+  {
+    "id": "vector_databases-05-refresh",
+    "group": "vector_databases",
+    "kind": "refresh"
+  },
+  {
+    "id": "vector_databases-06-unreadable",
+    "group": "vector_databases",
+    "kind": "unreadable"
+  },
+  {
+    "id": "vector_databases-07-unsupported",
+    "group": "vector_databases",
+    "kind": "unsupported"
+  },
+  {
+    "id": "vector_databases-08-version",
+    "group": "vector_databases",
+    "kind": "version"
+  },
+  {
+    "id": "vector_databases-09-budget",
+    "group": "vector_databases",
+    "kind": "budget"
+  },
+  {
+    "id": "vector_databases-10-recovery",
+    "group": "vector_databases",
+    "kind": "recovery"
+  },
+  {
+    "id": "search_apis-01-complete",
+    "group": "search_apis",
+    "kind": "complete"
+  },
+  {
+    "id": "search_apis-02-clarification",
+    "group": "search_apis",
+    "kind": "clarification"
+  },
+  {
+    "id": "search_apis-03-revision",
+    "group": "search_apis",
+    "kind": "revision"
+  },
+  {
+    "id": "search_apis-04-unchanged",
+    "group": "search_apis",
+    "kind": "unchanged"
+  },
+  {
+    "id": "search_apis-05-refresh",
+    "group": "search_apis",
+    "kind": "refresh"
+  },
+  {
+    "id": "search_apis-06-unreadable",
+    "group": "search_apis",
+    "kind": "unreadable"
+  },
+  {
+    "id": "search_apis-07-unsupported",
+    "group": "search_apis",
+    "kind": "unsupported"
+  },
+  {
+    "id": "search_apis-08-version",
+    "group": "search_apis",
+    "kind": "version"
+  },
+  {
+    "id": "search_apis-09-budget",
+    "group": "search_apis",
+    "kind": "budget"
+  },
+  {
+    "id": "search_apis-10-recovery",
+    "group": "search_apis",
+    "kind": "recovery"
+  },
+  {
+    "id": "rag_platforms-01-complete",
+    "group": "rag_platforms",
+    "kind": "complete"
+  },
+  {
+    "id": "rag_platforms-02-clarification",
+    "group": "rag_platforms",
+    "kind": "clarification"
+  },
+  {
+    "id": "rag_platforms-03-revision",
+    "group": "rag_platforms",
+    "kind": "revision"
+  },
+  {
+    "id": "rag_platforms-04-unchanged",
+    "group": "rag_platforms",
+    "kind": "unchanged"
+  },
+  {
+    "id": "rag_platforms-05-refresh",
+    "group": "rag_platforms",
+    "kind": "refresh"
+  },
+  {
+    "id": "rag_platforms-06-unreadable",
+    "group": "rag_platforms",
+    "kind": "unreadable"
+  },
+  {
+    "id": "rag_platforms-07-unsupported",
+    "group": "rag_platforms",
+    "kind": "unsupported"
+  },
+  {
+    "id": "rag_platforms-08-version",
+    "group": "rag_platforms",
+    "kind": "version"
+  },
+  {
+    "id": "rag_platforms-09-budget",
+    "group": "rag_platforms",
+    "kind": "budget"
+  },
+  {
+    "id": "rag_platforms-10-recovery",
+    "group": "rag_platforms",
+    "kind": "recovery"
+  }
+]

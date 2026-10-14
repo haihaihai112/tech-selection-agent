@@ -1,0 +1,17 @@
+[
+  {"id":"holdout-vector-01","group":"vector_databases","kind":"complete","query":"比较三款向量数据库，优先关注过滤能力；未知条件先保留。"},
+  {"id":"holdout-vector-02","group":"vector_databases","kind":"clarification","query":"比较本地知识库的向量数据库，不先假设部署环境。"},
+  {"id":"holdout-vector-03","group":"vector_databases","kind":"revision","query":"先比较部署与维护，再补充已有PostgreSQL技术栈。"},
+  {"id":"holdout-vector-04","group":"vector_databases","kind":"unreadable","query":"官方页面无法打开时，保留来源缺口并继续其他产品。"},
+  {"id":"holdout-vector-05","group":"vector_databases","kind":"recovery","query":"重启后继续查看已经生成的向量数据库比较报告。"},
+  {"id":"holdout-search-01","group":"search_apis","kind":"complete","query":"为研究型问答比较三个搜索API，优先来源信息。"},
+  {"id":"holdout-search-02","group":"search_apis","kind":"clarification","query":"比较搜索API，暂不确定需要摘要还是正文。"},
+  {"id":"holdout-search-03","group":"search_apis","kind":"revision","query":"补充条件：输出必须适合研究报告引用。"},
+  {"id":"holdout-search-04","group":"search_apis","kind":"budget","query":"搜索预算很小，达到调用上限后报告必须保留未解决项。"},
+  {"id":"holdout-search-05","group":"search_apis","kind":"unsupported","query":"无法从原文支持的搜索API能力不能写成确定事实。"},
+  {"id":"holdout-rag-01","group":"rag_platforms","kind":"complete","query":"比较三个知识库平台，优先PDF处理和检索配置。"},
+  {"id":"holdout-rag-02","group":"rag_platforms","kind":"clarification","query":"想选自托管知识库平台，但文档类型尚未确定。"},
+  {"id":"holdout-rag-03","group":"rag_platforms","kind":"revision","query":"补充条件：团队已有工作流编排需求。"},
+  {"id":"holdout-rag-04","group":"rag_platforms","kind":"refresh","query":"刷新过期资料后再比较部署与许可。"},
+  {"id":"holdout-rag-05","group":"rag_platforms","kind":"version","query":"请求不存在的版本时不能将其他版本资料冒充目标版本。"}
+]

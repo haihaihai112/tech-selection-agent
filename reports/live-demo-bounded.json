@@ -1,0 +1,78 @@
+{
+  "generated_at": "2026-09-21T08:52:11.595732+00:00",
+  "mode": "live",
+  "config": {
+    "mode": "live",
+    "model": "qwen3.6-plus",
+    "llm_configured": true,
+    "search_configured": true,
+    "search_limit": 18,
+    "read_limit": 24,
+    "research_steps": 8,
+    "repair_rounds": 2,
+    "task_timeout": 300.0
+  },
+  "tasks": [
+    {
+      "active_seconds": 2.6090000000003783,
+      "base_version": null,
+      "brief": null,
+      "checkpoint": "starting",
+      "claims": [],
+      "created_at": "2026-09-21T08:52:08.349926+00:00",
+      "error": "处理失败：PermissionDeniedError",
+      "evidence_ids": [],
+      "id": "78e2c5f8b7b84eaca0e6a1318681b051",
+      "input": {
+        "allow_unknown": true,
+        "force_refresh": false,
+        "group": "vector_databases",
+        "query": "为个人知识库比较pgvector、Qdrant、Milvus。采用本地自托管部署，优先考虑维护成本。已有技术栈、预算和数据规模尚未明确，先保留条件式结论。不计算总费用，不声称性能实测结果。",
+        "requested_versions": {},
+        "session_id": "8ad226ce76e54d4ba642fff4d86f29aa"
+      },
+      "model_mode": "live",
+      "repair_round": 0,
+      "report_id": "ea5d39f2d5f64f1a947c113b4c11f304",
+      "research_steps": {},
+      "session_id": "8ad226ce76e54d4ba642fff4d86f29aa",
+      "snapshot_ids": [],
+      "status": "failed",
+      "summary_only_ids": [],
+      "trace": [
+        {
+          "error_type": "PermissionDeniedError",
+          "operation": "task",
+          "status": "error"
+        }
+      ],
+      "updated_at": "2026-09-21T08:52:10.965831+00:00",
+      "usage": {
+        "completion_tokens": 0,
+        "cost_note": "按配置单价与请求数估算，失败调用是否计费以供应商账单为准；币种不混加。",
+        "failed_calls": 0,
+        "llm_cost_cny": null,
+        "model_calls": 0,
+        "prompt_tokens": 0,
+        "read_calls": 0,
+        "reused_snapshots": 0,
+        "search_calls": 0,
+        "search_cost_usd": null,
+        "token_measurement": "provider_reported"
+      },
+      "usage_counters": {
+        "completion_tokens": 0,
+        "failed_calls": 0,
+        "model_calls": 0,
+        "prompt_tokens": 0,
+        "read_calls": 0,
+        "reused_snapshots": 0,
+        "search_calls": 0
+      }
+    }
+  ],
+  "reports": [],
+  "evidence": [],
+  "source_snapshots": [],
+  "note": "真实运行原始结果；completed仅表示结构化流程完成，事实支持需独立审计。"
+}

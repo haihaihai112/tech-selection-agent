@@ -1,0 +1,1493 @@
+{
+  "generated_at": "2026-09-21T10:00:20.298270+00:00",
+  "mode": "live",
+  "config": {
+    "mode": "live",
+    "model": "deepseek-v3.2",
+    "fallback_models": [],
+    "llm_configured": true,
+    "search_configured": true,
+    "search_limit": 18,
+    "read_limit": 24,
+    "research_steps": 8,
+    "repair_rounds": 2,
+    "task_timeout": 300.0
+  },
+  "tasks": [
+    {
+      "active_seconds": 82.98400000000038,
+      "base_version": null,
+      "brief": {
+        "constraints": {
+          "维护要求": "优先考虑维护成本",
+          "部署方式": "本地自托管部署"
+        },
+        "dimensions": [
+          "部署方式",
+          "已有技术栈",
+          "检索与过滤",
+          "维护要求",
+          "扩展方式"
+        ],
+        "group": "vector_databases",
+        "preferences": [
+          "维护成本优先"
+        ],
+        "products": [
+          "pgvector",
+          "Qdrant",
+          "Milvus"
+        ],
+        "questions": [],
+        "requested_versions": {},
+        "unknowns": [
+          "预算",
+          "数据规模",
+          "已有技术栈",
+          "部署方式的具体要求",
+          "您的数据规模大概是多少（向量数量、维度）？",
+          "您目前的技术栈是什么（是否已使用PostgreSQL或其他数据库）？"
+        ]
+      },
+      "checkpoint": "verified",
+      "claims": [
+        {
+          "attribute": "本地自托管部署方式",
+          "conflicting_ids": [
+            "C-c493061253e645e2",
+            "C-3b0272f125cd4a41"
+          ],
+          "dimension": "部署方式",
+          "evidence_ids": [
+            "E-e28755d3ffe6f09ae00b129b-71"
+          ],
+          "id": "C-2f0f159ba2f34cf3",
+          "product": "Qdrant",
+          "reason": "同一属性与适用条件下存在不同值，需补查或保留差异。",
+          "scope": {},
+          "status": "contradicted",
+          "text": "可以使用Docker和Docker Compose在生产环境中运行Qdrant",
+          "value": "支持Docker和Docker Compose部署"
+        },
+        {
+          "attribute": "本地自托管部署方式",
+          "conflicting_ids": [
+            "C-2f0f159ba2f34cf3",
+            "C-3b0272f125cd4a41"
+          ],
+          "dimension": "部署方式",
+          "evidence_ids": [
+            "E-e28755d3ffe6f09ae00b129b-45"
+          ],
+          "id": "C-c493061253e645e2",
+          "product": "Qdrant",
+          "reason": "同一属性与适用条件下存在不同值，需补查或保留差异。",
+          "scope": {},
+          "status": "contradicted",
+          "text": "可以使用现成的Helm Chart在Kubernetes集群中运行Qdrant",
+          "value": "支持Kubernetes Helm Chart部署"
+        },
+        {
+          "attribute": "本地自托管部署方式",
+          "conflicting_ids": [
+            "C-2f0f159ba2f34cf3",
+            "C-c493061253e645e2"
+          ],
+          "dimension": "部署方式",
+          "evidence_ids": [
+            "E-e28755d3ffe6f09ae00b129b-36"
+          ],
+          "id": "C-3b0272f125cd4a41",
+          "product": "Qdrant",
+          "reason": "同一属性与适用条件下存在不同值，需补查或保留差异。",
+          "scope": {},
+          "status": "contradicted",
+          "text": "建议在Kubernetes集群中使用Qdrant私有云企业操作员安装Qdrant",
+          "value": "支持私有云企业操作员部署"
+        },
+        {
+          "attribute": "部署模式",
+          "conflicting_ids": [],
+          "dimension": "部署方式",
+          "evidence_ids": [
+            "E-306b22dfb6ef8fdd389b38e1-22"
+          ],
+          "id": "C-269a641f01fe4283",
+          "product": "Milvus",
+          "reason": "证据E-306b22dfb6ef8fdd389b38e1-22明确列出三种部署选项：Milvus Lite、Standalone和Distributed",
+          "scope": {},
+          "status": "supported",
+          "text": "Milvus支持三种部署选项：Milvus Lite、Milvus Standalone和Milvus Distributed",
+          "value": "三种部署选项"
+        },
+        {
+          "attribute": "本地部署",
+          "conflicting_ids": [],
+          "dimension": "部署方式",
+          "evidence_ids": [
+            "E-306b22dfb6ef8fdd389b38e1-24"
+          ],
+          "id": "C-26f3e0312ba64dea",
+          "product": "Milvus",
+          "reason": "证据E-306b22dfb6ef8fdd389b38e1-24明确说明Milvus Lite是Python库，可在本地Jupyter Notebooks中运行",
+          "scope": {},
+          "status": "supported",
+          "text": "Milvus Lite是Python库，可在本地Jupyter Notebooks中运行，适合快速原型开发",
+          "value": "支持本地部署"
+        },
+        {
+          "attribute": "单机部署",
+          "conflicting_ids": [],
+          "dimension": "部署方式",
+          "evidence_ids": [
+            "E-306b22dfb6ef8fdd389b38e1-27"
+          ],
+          "id": "C-3b0fdcf64fbf4e93",
+          "product": "Milvus",
+          "reason": "证据E-306b22dfb6ef8fdd389b38e1-27明确说明Milvus Standalone是单机服务器部署",
+          "scope": {},
+          "status": "supported",
+          "text": "Milvus Standalone是单机服务器部署，所有组件打包到单个Docker镜像中",
+          "value": "支持单机部署"
+        },
+        {
+          "attribute": "分布式部署",
+          "conflicting_ids": [],
+          "dimension": "部署方式",
+          "evidence_ids": [
+            "E-306b22dfb6ef8fdd389b38e1-29"
+          ],
+          "id": "C-f231bcdaef3c4c68",
+          "product": "Milvus",
+          "reason": "证据E-306b22dfb6ef8fdd389b38e1-29明确说明Milvus Distributed可部署在Kubernetes集群上",
+          "scope": {},
+          "status": "supported",
+          "text": "Milvus Distributed可部署在Kubernetes集群上，具有云原生架构",
+          "value": "支持Kubernetes集群部署"
+        },
+        {
+          "attribute": "搜索能力",
+          "conflicting_ids": [],
+          "dimension": "检索与过滤",
+          "evidence_ids": [
+            "E-306b22dfb6ef8fdd389b38e1-46"
+          ],
+          "id": "C-92d90ec43af141a6",
+          "product": "Milvus",
+          "reason": "证据E-306b22dfb6ef8fdd389b38e1-46明确列出向量搜索、元数据过滤、范围搜索、标量查询、按主键获取实体和混合搜索",
+          "scope": {},
+          "status": "supported",
+          "text": "Milvus支持向量搜索（ANN搜索）、元数据过滤、范围搜索、标量查询、按主键获取实体和混合搜索",
+          "value": "支持多种搜索功能"
+        }
+      ],
+      "created_at": "2026-09-21T09:58:57.063445+00:00",
+      "error": "处理失败：ValueError",
+      "evidence_ids": [
+        "E-306b22dfb6ef8fdd389b38e1-15",
+        "E-306b22dfb6ef8fdd389b38e1-19",
+        "E-306b22dfb6ef8fdd389b38e1-21",
+        "E-306b22dfb6ef8fdd389b38e1-22",
+        "E-306b22dfb6ef8fdd389b38e1-24",
+        "E-306b22dfb6ef8fdd389b38e1-25",
+        "E-306b22dfb6ef8fdd389b38e1-27",
+        "E-306b22dfb6ef8fdd389b38e1-29",
+        "E-306b22dfb6ef8fdd389b38e1-32",
+        "E-306b22dfb6ef8fdd389b38e1-33",
+        "E-306b22dfb6ef8fdd389b38e1-34",
+        "E-306b22dfb6ef8fdd389b38e1-35",
+        "E-306b22dfb6ef8fdd389b38e1-36",
+        "E-306b22dfb6ef8fdd389b38e1-39",
+        "E-306b22dfb6ef8fdd389b38e1-46",
+        "E-306b22dfb6ef8fdd389b38e1-5",
+        "E-e28755d3ffe6f09ae00b129b-0",
+        "E-e28755d3ffe6f09ae00b129b-1",
+        "E-e28755d3ffe6f09ae00b129b-100",
+        "E-e28755d3ffe6f09ae00b129b-103",
+        "E-e28755d3ffe6f09ae00b129b-12",
+        "E-e28755d3ffe6f09ae00b129b-2",
+        "E-e28755d3ffe6f09ae00b129b-25",
+        "E-e28755d3ffe6f09ae00b129b-26",
+        "E-e28755d3ffe6f09ae00b129b-3",
+        "E-e28755d3ffe6f09ae00b129b-36",
+        "E-e28755d3ffe6f09ae00b129b-41",
+        "E-e28755d3ffe6f09ae00b129b-45",
+        "E-e28755d3ffe6f09ae00b129b-69",
+        "E-e28755d3ffe6f09ae00b129b-71",
+        "E-e28755d3ffe6f09ae00b129b-8",
+        "E-e28755d3ffe6f09ae00b129b-84"
+      ],
+      "id": "ae4a3add93c4467fa8a0c62069ca0f8e",
+      "input": {
+        "allow_unknown": true,
+        "force_refresh": false,
+        "group": "vector_databases",
+        "query": "为个人知识库比较pgvector、Qdrant、Milvus。采用本地自托管部署，优先考虑维护成本。已有技术栈、预算和数据规模尚未明确，先保留条件式结论。不计算总费用，不声称性能实测结果。",
+        "requested_versions": {},
+        "session_id": "721e59434748438281b7344f429af618"
+      },
+      "model_mode": "live",
+      "repair_round": 2,
+      "report_id": "b498f57b0de14c7c9c5d16966233a23a",
+      "research_steps": {
+        "Milvus": 8,
+        "Qdrant": 8,
+        "pgvector": 8
+      },
+      "session_id": "721e59434748438281b7344f429af618",
+      "snapshot_ids": [
+        "306b22dfb6ef8fdd389b38e1",
+        "e28755d3ffe6f09ae00b129b"
+      ],
+      "status": "failed",
+      "summary_only_ids": [
+        "00c5338d966abda6c3f64fe1",
+        "03c9af9045570975e31900da",
+        "0fac4378d7ee2da72cc853c4",
+        "132bc2f68a57543f7efa91cf",
+        "167cc7d69427f367bd76d99e",
+        "2b9bf9dad50e1f2548a90a82",
+        "32eea14f9b022a7134eb3cc4",
+        "33697ee1a060130d3d6682e9",
+        "359f40a09eb61fadf7916624",
+        "35e814153da8fd3fac8b63d8",
+        "48e65841d5e02b13fdb4e175",
+        "4f5481dd77e48b6a82eca52b",
+        "5aee7541b93a01544cce48ed",
+        "5b94f657b7d67fb1d1e1643c",
+        "680a5dcc69cac9bf4a417df0",
+        "71cc7078e629e66b9bffef54",
+        "79be767ad3556f5858acceee",
+        "8594a9690e7724f5cefbd790",
+        "9483aa8a59724ee6137b3ba4",
+        "99c3b0ba1c77c11bfc1f61e2",
+        "a032250c05ea19fb03999e28",
+        "b3899da870dd022efc92cde6",
+        "b7779e7ab31e4f971900d2f6",
+        "b822daa758ae731b11e0ca48",
+        "c5e297cef870470d3fffda99",
+        "c7355752376b41c22a35977c",
+        "cb2da6c0a74c4f7cd97b9e82",
+        "d0fd76f6a6f91e5dd7e946eb",
+        "e19fdbc219e52c451d4b7ceb",
+        "e2b9984c888741620b0712ba",
+        "ec1388b2a55f32bab53f81ee",
+        "f1d03fa465c4912d22be9e43",
+        "f1ed9991fef8a97725f722eb",
+        "f7d2213650cdd41b7b28fe92"
+      ],
+      "trace": [
+        {
+          "operation": "clarify",
+          "questions": [],
+          "status": "working"
+        },
+        {
+          "operation": "research_round",
+          "round": 0,
+          "status": "working",
+          "targets": {
+            "Milvus": [
+              "部署方式",
+              "已有技术栈",
+              "检索与过滤",
+              "维护要求",
+              "扩展方式"
+            ],
+            "Qdrant": [
+              "部署方式",
+              "已有技术栈",
+              "检索与过滤",
+              "维护要求",
+              "扩展方式"
+            ],
+            "pgvector": [
+              "部署方式",
+              "已有技术栈",
+              "检索与过滤",
+              "维护要求",
+              "扩展方式"
+            ]
+          }
+        },
+        {
+          "operation": "model_decision",
+          "product": "pgvector",
+          "status": "ok",
+          "step": 1,
+          "tools": [
+            "search"
+          ]
+        },
+        {
+          "operation": "model_decision",
+          "product": "Qdrant",
+          "status": "ok",
+          "step": 1,
+          "tools": [
+            "search"
+          ]
+        },
+        {
+          "operation": "model_decision",
+          "product": "Milvus",
+          "status": "ok",
+          "step": 1,
+          "tools": [
+            "search"
+          ]
+        },
+        {
+          "count": 5,
+          "elapsed_ms": 1703.32,
+          "operation": "search",
+          "product": "Qdrant",
+          "status": "ok"
+        },
+        {
+          "count": 5,
+          "elapsed_ms": 1979.41,
+          "operation": "search",
+          "product": "pgvector",
+          "status": "ok"
+        },
+        {
+          "count": 5,
+          "elapsed_ms": 2004.42,
+          "operation": "search",
+          "product": "Milvus",
+          "status": "ok"
+        },
+        {
+          "operation": "model_decision",
+          "product": "pgvector",
+          "status": "ok",
+          "step": 2,
+          "tools": [
+            "search"
+          ]
+        },
+        {
+          "operation": "model_decision",
+          "product": "Qdrant",
+          "status": "ok",
+          "step": 2,
+          "tools": [
+            "read_page"
+          ]
+        },
+        {
+          "operation": "model_decision",
+          "product": "Milvus",
+          "status": "ok",
+          "step": 2,
+          "tools": [
+            "search"
+          ]
+        },
+        {
+          "count": 5,
+          "elapsed_ms": 1693.7,
+          "operation": "search",
+          "product": "pgvector",
+          "status": "ok"
+        },
+        {
+          "elapsed_ms": 2377.82,
+          "operation": "read_page",
+          "product": "Qdrant",
+          "snapshot_id": "e28755d3ffe6f09ae00b129b",
+          "status": "ok"
+        },
+        {
+          "count": 5,
+          "elapsed_ms": 2247.43,
+          "operation": "search",
+          "product": "Milvus",
+          "status": "ok"
+        },
+        {
+          "operation": "model_decision",
+          "product": "pgvector",
+          "status": "ok",
+          "step": 3,
+          "tools": [
+            "read_page"
+          ]
+        },
+        {
+          "operation": "model_decision",
+          "product": "Qdrant",
+          "status": "ok",
+          "step": 3,
+          "tools": [
+            "search"
+          ]
+        },
+        {
+          "operation": "model_decision",
+          "product": "Milvus",
+          "status": "ok",
+          "step": 3,
+          "tools": [
+            "read_page"
+          ]
+        },
+        {
+          "elapsed_ms": 1566.98,
+          "operation": "read_page",
+          "product": "Milvus",
+          "snapshot_id": "306b22dfb6ef8fdd389b38e1",
+          "status": "ok"
+        },
+        {
+          "count": 5,
+          "elapsed_ms": 1712.16,
+          "operation": "search",
+          "product": "Qdrant",
+          "status": "ok"
+        },
+        {
+          "operation": "model_decision",
+          "product": "Qdrant",
+          "status": "ok",
+          "step": 4,
+          "tools": [
+            "submit_findings"
+          ]
+        },
+        {
+          "details": [
+            {
+              "location": [
+                "findings"
+              ],
+              "type": "extra_forbidden"
+            }
+          ],
+          "error_type": "ValidationError",
+          "operation": "tool_arguments",
+          "product": "Qdrant",
+          "status": "error",
+          "tool": "submit_findings"
+        },
+        {
+          "operation": "model_decision",
+          "product": "Milvus",
+          "status": "ok",
+          "step": 4,
+          "tools": [
+            "submit_findings"
+          ]
+        },
+        {
+          "details": [
+            {
+              "location": [
+                "findings"
+              ],
+              "type": "extra_forbidden"
+            }
+          ],
+          "error_type": "ValidationError",
+          "operation": "tool_arguments",
+          "product": "Milvus",
+          "status": "error",
+          "tool": "submit_findings"
+        },
+        {
+          "operation": "model_decision",
+          "product": "Qdrant",
+          "status": "ok",
+          "step": 5,
+          "tools": [
+            "submit_findings"
+          ]
+        },
+        {
+          "claims": 3,
+          "gaps": [
+            "已有技术栈",
+            "检索与过滤",
+            "维护要求",
+            "扩展方式"
+          ],
+          "operation": "submit_findings",
+          "product": "Qdrant",
+          "status": "ok"
+        },
+        {
+          "operation": "model_decision",
+          "product": "Milvus",
+          "status": "ok",
+          "step": 5,
+          "tools": [
+            "submit_findings"
+          ]
+        },
+        {
+          "details": [
+            {
+              "location": [
+                "findings"
+              ],
+              "type": "extra_forbidden"
+            }
+          ],
+          "error_type": "ValidationError",
+          "operation": "tool_arguments",
+          "product": "Milvus",
+          "status": "error",
+          "tool": "submit_findings"
+        },
+        {
+          "elapsed_ms": 20192.1,
+          "error_type": "ReadTimeout",
+          "operation": "read_page",
+          "product": "pgvector",
+          "status": "error"
+        },
+        {
+          "operation": "model_decision",
+          "product": "pgvector",
+          "status": "ok",
+          "step": 4,
+          "tools": [
+            "submit_findings"
+          ]
+        },
+        {
+          "details": [
+            {
+              "location": [
+                "findings"
+              ],
+              "type": "extra_forbidden"
+            }
+          ],
+          "error_type": "ValidationError",
+          "operation": "tool_arguments",
+          "product": "pgvector",
+          "status": "error",
+          "tool": "submit_findings"
+        },
+        {
+          "operation": "model_decision",
+          "product": "pgvector",
+          "status": "ok",
+          "step": 5,
+          "tools": [
+            "submit_findings"
+          ]
+        },
+        {
+          "details": [
+            {
+              "location": [
+                "findings"
+              ],
+              "type": "extra_forbidden"
+            }
+          ],
+          "error_type": "ValidationError",
+          "operation": "tool_arguments",
+          "product": "pgvector",
+          "status": "error",
+          "tool": "submit_findings"
+        },
+        {
+          "elapsed_ms": 4750.39,
+          "operation": "verify",
+          "product": "all",
+          "status": "ok",
+          "supported": 0,
+          "unresolved": 3
+        },
+        {
+          "operation": "research_round",
+          "round": 1,
+          "status": "working",
+          "targets": {
+            "Milvus": [
+              "部署方式",
+              "已有技术栈",
+              "检索与过滤",
+              "维护要求",
+              "扩展方式"
+            ],
+            "Qdrant": [
+              "部署方式",
+              "已有技术栈",
+              "检索与过滤",
+              "维护要求",
+              "扩展方式"
+            ],
+            "pgvector": [
+              "部署方式",
+              "已有技术栈",
+              "检索与过滤",
+              "维护要求",
+              "扩展方式"
+            ]
+          }
+        },
+        {
+          "operation": "model_decision",
+          "product": "pgvector",
+          "status": "ok",
+          "step": 6,
+          "tools": [
+            "search"
+          ]
+        },
+        {
+          "operation": "model_decision",
+          "product": "Qdrant",
+          "status": "ok",
+          "step": 6,
+          "tools": [
+            "read_page"
+          ]
+        },
+        {
+          "elapsed_ms": 3.86,
+          "operation": "read_page",
+          "product": "Qdrant",
+          "snapshot_id": "e28755d3ffe6f09ae00b129b",
+          "status": "reused"
+        },
+        {
+          "operation": "model_decision",
+          "product": "Milvus",
+          "status": "ok",
+          "step": 6,
+          "tools": [
+            "read_page"
+          ]
+        },
+        {
+          "elapsed_ms": 2.71,
+          "operation": "read_page",
+          "product": "Milvus",
+          "snapshot_id": "306b22dfb6ef8fdd389b38e1",
+          "status": "reused"
+        },
+        {
+          "count": 5,
+          "elapsed_ms": 2345.86,
+          "operation": "search",
+          "product": "pgvector",
+          "status": "ok"
+        },
+        {
+          "operation": "model_decision",
+          "product": "pgvector",
+          "status": "ok",
+          "step": 7,
+          "tools": [
+            "submit_findings"
+          ]
+        },
+        {
+          "details": [
+            {
+              "location": [
+                "findings"
+              ],
+              "type": "extra_forbidden"
+            }
+          ],
+          "error_type": "ValidationError",
+          "operation": "tool_arguments",
+          "product": "pgvector",
+          "status": "error",
+          "tool": "submit_findings"
+        },
+        {
+          "operation": "model_decision",
+          "product": "pgvector",
+          "status": "ok",
+          "step": 8,
+          "tools": [
+            "submit_findings"
+          ]
+        },
+        {
+          "details": [
+            {
+              "location": [
+                "findings"
+              ],
+              "type": "extra_forbidden"
+            }
+          ],
+          "error_type": "ValidationError",
+          "operation": "tool_arguments",
+          "product": "pgvector",
+          "status": "error",
+          "tool": "submit_findings"
+        },
+        {
+          "operation": "model_decision",
+          "product": "Qdrant",
+          "status": "ok",
+          "step": 7,
+          "tools": [
+            "submit_findings"
+          ]
+        },
+        {
+          "details": [
+            {
+              "location": [
+                "findings"
+              ],
+              "type": "extra_forbidden"
+            }
+          ],
+          "error_type": "ValidationError",
+          "operation": "tool_arguments",
+          "product": "Qdrant",
+          "status": "error",
+          "tool": "submit_findings"
+        },
+        {
+          "operation": "model_decision",
+          "product": "Milvus",
+          "status": "ok",
+          "step": 7,
+          "tools": [
+            "submit_findings"
+          ]
+        },
+        {
+          "claims": 5,
+          "gaps": [
+            "已有技术栈",
+            "维护要求",
+            "扩展方式"
+          ],
+          "operation": "submit_findings",
+          "product": "Milvus",
+          "status": "ok"
+        },
+        {
+          "operation": "model_decision",
+          "product": "Qdrant",
+          "status": "ok",
+          "step": 8,
+          "tools": [
+            "submit_findings"
+          ]
+        },
+        {
+          "details": [
+            {
+              "location": [
+                "findings"
+              ],
+              "type": "extra_forbidden"
+            }
+          ],
+          "error_type": "ValidationError",
+          "operation": "tool_arguments",
+          "product": "Qdrant",
+          "status": "error",
+          "tool": "submit_findings"
+        },
+        {
+          "elapsed_ms": 7228.41,
+          "operation": "verify",
+          "product": "all",
+          "status": "ok",
+          "supported": 5,
+          "unresolved": 3
+        },
+        {
+          "operation": "research_round",
+          "round": 2,
+          "status": "working",
+          "targets": {
+            "Milvus": [
+              "已有技术栈",
+              "维护要求",
+              "扩展方式"
+            ],
+            "Qdrant": [
+              "部署方式",
+              "已有技术栈",
+              "检索与过滤",
+              "维护要求",
+              "扩展方式"
+            ],
+            "pgvector": [
+              "部署方式",
+              "已有技术栈",
+              "检索与过滤",
+              "维护要求",
+              "扩展方式"
+            ]
+          }
+        },
+        {
+          "operation": "model_decision",
+          "product": "Milvus",
+          "status": "ok",
+          "step": 8,
+          "tools": [
+            "submit_findings"
+          ]
+        },
+        {
+          "claims": 0,
+          "gaps": [
+            "已有技术栈",
+            "维护要求",
+            "扩展方式"
+          ],
+          "operation": "submit_findings",
+          "product": "Milvus",
+          "status": "ok"
+        },
+        {
+          "elapsed_ms": 7186.84,
+          "operation": "verify",
+          "product": "all",
+          "status": "ok",
+          "supported": 5,
+          "unresolved": 3
+        },
+        {
+          "error_type": "ValueError",
+          "operation": "task",
+          "status": "error"
+        }
+      ],
+      "updated_at": "2026-09-21T10:00:20.070051+00:00",
+      "usage": {
+        "completion_tokens": 6028,
+        "cost_note": "单价只适用于配置的主模型；切换或供应商返回不同模型名时费用未知。失败调用是否计费以账单为准；币种不混加。",
+        "exhausted_models": [],
+        "failed_calls": 1,
+        "llm_cost_cny": null,
+        "model_attempts": [
+          {
+            "actual_model": "deepseek-v3.2",
+            "completion_tokens": 251,
+            "elapsed_seconds": 5.580286199998227,
+            "prompt_tokens": 879,
+            "requested_model": "deepseek-v3.2",
+            "stage": "brief",
+            "status": "ok"
+          },
+          {
+            "actual_model": "deepseek-v3.2",
+            "completion_tokens": 67,
+            "elapsed_seconds": 1.8265981000004103,
+            "prompt_tokens": 1110,
+            "requested_model": "deepseek-v3.2",
+            "stage": "research",
+            "status": "ok"
+          },
+          {
+            "actual_model": "deepseek-v3.2",
+            "completion_tokens": 74,
+            "elapsed_seconds": 2.0328996000025654,
+            "prompt_tokens": 1112,
+            "requested_model": "deepseek-v3.2",
+            "stage": "research",
+            "status": "ok"
+          },
+          {
+            "actual_model": "deepseek-v3.2",
+            "completion_tokens": 79,
+            "elapsed_seconds": 2.061582800000906,
+            "prompt_tokens": 1112,
+            "requested_model": "deepseek-v3.2",
+            "stage": "research",
+            "status": "ok"
+          },
+          {
+            "actual_model": "deepseek-v3.2",
+            "completion_tokens": 53,
+            "elapsed_seconds": 1.7266367999982322,
+            "prompt_tokens": 2751,
+            "requested_model": "deepseek-v3.2",
+            "stage": "research",
+            "status": "ok"
+          },
+          {
+            "actual_model": "deepseek-v3.2",
+            "completion_tokens": 66,
+            "elapsed_seconds": 2.084357600000658,
+            "prompt_tokens": 4564,
+            "requested_model": "deepseek-v3.2",
+            "stage": "research",
+            "status": "ok"
+          },
+          {
+            "actual_model": "deepseek-v3.2",
+            "completion_tokens": 66,
+            "elapsed_seconds": 1.9253410999990592,
+            "prompt_tokens": 4657,
+            "requested_model": "deepseek-v3.2",
+            "stage": "research",
+            "status": "ok"
+          },
+          {
+            "actual_model": "deepseek-v3.2",
+            "completion_tokens": 63,
+            "elapsed_seconds": 1.7909493000006478,
+            "prompt_tokens": 4864,
+            "requested_model": "deepseek-v3.2",
+            "stage": "research",
+            "status": "ok"
+          },
+          {
+            "actual_model": "deepseek-v3.2",
+            "completion_tokens": 66,
+            "elapsed_seconds": 1.9514264999997977,
+            "prompt_tokens": 6826,
+            "requested_model": "deepseek-v3.2",
+            "stage": "research",
+            "status": "ok"
+          },
+          {
+            "actual_model": "deepseek-v3.2",
+            "completion_tokens": 64,
+            "elapsed_seconds": 1.982681000001321,
+            "prompt_tokens": 6467,
+            "requested_model": "deepseek-v3.2",
+            "stage": "research",
+            "status": "ok"
+          },
+          {
+            "actual_model": "deepseek-v3.2",
+            "completion_tokens": 318,
+            "elapsed_seconds": 6.584992399999464,
+            "prompt_tokens": 8691,
+            "requested_model": "deepseek-v3.2",
+            "stage": "research",
+            "status": "ok"
+          },
+          {
+            "actual_model": "deepseek-v3.2",
+            "completion_tokens": 478,
+            "elapsed_seconds": 9.00668930000029,
+            "prompt_tokens": 9296,
+            "requested_model": "deepseek-v3.2",
+            "stage": "research",
+            "status": "ok"
+          },
+          {
+            "actual_model": "deepseek-v3.2",
+            "completion_tokens": 326,
+            "elapsed_seconds": 5.993055300001288,
+            "prompt_tokens": 8062,
+            "requested_model": "deepseek-v3.2",
+            "stage": "research",
+            "status": "ok"
+          },
+          {
+            "actual_model": "deepseek-v3.2",
+            "completion_tokens": 478,
+            "elapsed_seconds": 8.070367699998314,
+            "prompt_tokens": 9887,
+            "requested_model": "deepseek-v3.2",
+            "stage": "research",
+            "status": "ok"
+          },
+          {
+            "actual_model": "deepseek-v3.2",
+            "completion_tokens": 57,
+            "elapsed_seconds": 1.7285812000009173,
+            "prompt_tokens": 4909,
+            "requested_model": "deepseek-v3.2",
+            "stage": "research",
+            "status": "ok"
+          },
+          {
+            "actual_model": "deepseek-v3.2",
+            "completion_tokens": 57,
+            "elapsed_seconds": 1.6893130999997084,
+            "prompt_tokens": 5079,
+            "requested_model": "deepseek-v3.2",
+            "stage": "research",
+            "status": "ok"
+          },
+          {
+            "actual_model": "deepseek-v3.2",
+            "completion_tokens": 241,
+            "elapsed_seconds": 4.723854100000608,
+            "prompt_tokens": 1230,
+            "requested_model": "deepseek-v3.2",
+            "stage": "verify",
+            "status": "ok"
+          },
+          {
+            "actual_model": "deepseek-v3.2",
+            "completion_tokens": 65,
+            "elapsed_seconds": 1.8299958999996306,
+            "prompt_tokens": 1110,
+            "requested_model": "deepseek-v3.2",
+            "stage": "research",
+            "status": "ok"
+          },
+          {
+            "actual_model": "deepseek-v3.2",
+            "completion_tokens": 75,
+            "elapsed_seconds": 2.057080099999439,
+            "prompt_tokens": 1139,
+            "requested_model": "deepseek-v3.2",
+            "stage": "research",
+            "status": "ok"
+          },
+          {
+            "actual_model": "deepseek-v3.2",
+            "completion_tokens": 78,
+            "elapsed_seconds": 2.094329100000323,
+            "prompt_tokens": 1147,
+            "requested_model": "deepseek-v3.2",
+            "stage": "research",
+            "status": "ok"
+          },
+          {
+            "actual_model": "deepseek-v3.2",
+            "completion_tokens": 57,
+            "elapsed_seconds": 1.7743703999985883,
+            "prompt_tokens": 4097,
+            "requested_model": "deepseek-v3.2",
+            "stage": "research",
+            "status": "ok"
+          },
+          {
+            "actual_model": "deepseek-v3.2",
+            "completion_tokens": 57,
+            "elapsed_seconds": 1.8861109999998007,
+            "prompt_tokens": 4267,
+            "requested_model": "deepseek-v3.2",
+            "stage": "research",
+            "status": "ok"
+          },
+          {
+            "actual_model": "deepseek-v3.2",
+            "completion_tokens": 393,
+            "elapsed_seconds": 7.527221700001974,
+            "prompt_tokens": 3352,
+            "requested_model": "deepseek-v3.2",
+            "stage": "research",
+            "status": "ok"
+          },
+          {
+            "actual_model": "deepseek-v3.2",
+            "completion_tokens": 504,
+            "elapsed_seconds": 8.772501200000988,
+            "prompt_tokens": 3991,
+            "requested_model": "deepseek-v3.2",
+            "stage": "research",
+            "status": "ok"
+          },
+          {
+            "actual_model": "deepseek-v3.2",
+            "completion_tokens": 393,
+            "elapsed_seconds": 7.114959800001088,
+            "prompt_tokens": 3858,
+            "requested_model": "deepseek-v3.2",
+            "stage": "research",
+            "status": "ok"
+          },
+          {
+            "actual_model": "deepseek-v3.2",
+            "completion_tokens": 241,
+            "elapsed_seconds": 4.550083999998606,
+            "prompt_tokens": 1230,
+            "requested_model": "deepseek-v3.2",
+            "stage": "verify",
+            "status": "ok"
+          },
+          {
+            "actual_model": "deepseek-v3.2",
+            "completion_tokens": 390,
+            "elapsed_seconds": 7.155210000000807,
+            "prompt_tokens": 1774,
+            "requested_model": "deepseek-v3.2",
+            "stage": "verify",
+            "status": "ok"
+          },
+          {
+            "actual_model": "deepseek-v3.2",
+            "completion_tokens": 56,
+            "elapsed_seconds": 1.56141949999801,
+            "prompt_tokens": 1071,
+            "requested_model": "deepseek-v3.2",
+            "stage": "research",
+            "status": "ok"
+          },
+          {
+            "actual_model": "deepseek-v3.2",
+            "completion_tokens": 192,
+            "elapsed_seconds": 3.9229460999995354,
+            "prompt_tokens": 1230,
+            "requested_model": "deepseek-v3.2",
+            "stage": "verify",
+            "status": "ok"
+          },
+          {
+            "actual_model": "deepseek-v3.2",
+            "completion_tokens": 390,
+            "elapsed_seconds": 7.109734199999366,
+            "prompt_tokens": 1774,
+            "requested_model": "deepseek-v3.2",
+            "stage": "verify",
+            "status": "ok"
+          },
+          {
+            "actual_model": "deepseek-v3.2",
+            "completion_tokens": 196,
+            "elapsed_seconds": 4.041679599999043,
+            "prompt_tokens": 1547,
+            "requested_model": "deepseek-v3.2",
+            "stage": "write",
+            "status": "ok"
+          },
+          {
+            "actual_model": "deepseek-v3.2",
+            "completion_tokens": 137,
+            "elapsed_seconds": 3.094449000000168,
+            "prompt_tokens": 1406,
+            "requested_model": "deepseek-v3.2",
+            "stage": "verify_judgments",
+            "status": "ok"
+          }
+        ],
+        "model_calls": 32,
+        "model_fallbacks": [],
+        "models": {
+          "deepseek-v3.2": {
+            "calls": 32,
+            "completion_tokens": 6028,
+            "prompt_tokens": 114489
+          }
+        },
+        "prompt_tokens": 114489,
+        "read_calls": 3,
+        "reused_snapshots": 0,
+        "search_calls": 7,
+        "search_cost_usd": null,
+        "token_measurement": "provider_reported"
+      },
+      "usage_counters": {
+        "completion_tokens": 6028,
+        "exhausted_models": [],
+        "failed_calls": 1,
+        "model_attempts": [
+          {
+            "actual_model": "deepseek-v3.2",
+            "completion_tokens": 251,
+            "elapsed_seconds": 5.580286199998227,
+            "prompt_tokens": 879,
+            "requested_model": "deepseek-v3.2",
+            "stage": "brief",
+            "status": "ok"
+          },
+          {
+            "actual_model": "deepseek-v3.2",
+            "completion_tokens": 67,
+            "elapsed_seconds": 1.8265981000004103,
+            "prompt_tokens": 1110,
+            "requested_model": "deepseek-v3.2",
+            "stage": "research",
+            "status": "ok"
+          },
+          {
+            "actual_model": "deepseek-v3.2",
+            "completion_tokens": 74,
+            "elapsed_seconds": 2.0328996000025654,
+            "prompt_tokens": 1112,
+            "requested_model": "deepseek-v3.2",
+            "stage": "research",
+            "status": "ok"
+          },
+          {
+            "actual_model": "deepseek-v3.2",
+            "completion_tokens": 79,
+            "elapsed_seconds": 2.061582800000906,
+            "prompt_tokens": 1112,
+            "requested_model": "deepseek-v3.2",
+            "stage": "research",
+            "status": "ok"
+          },
+          {
+            "actual_model": "deepseek-v3.2",
+            "completion_tokens": 53,
+            "elapsed_seconds": 1.7266367999982322,
+            "prompt_tokens": 2751,
+            "requested_model": "deepseek-v3.2",
+            "stage": "research",
+            "status": "ok"
+          },
+          {
+            "actual_model": "deepseek-v3.2",
+            "completion_tokens": 66,
+            "elapsed_seconds": 2.084357600000658,
+            "prompt_tokens": 4564,
+            "requested_model": "deepseek-v3.2",
+            "stage": "research",
+            "status": "ok"
+          },
+          {
+            "actual_model": "deepseek-v3.2",
+            "completion_tokens": 66,
+            "elapsed_seconds": 1.9253410999990592,
+            "prompt_tokens": 4657,
+            "requested_model": "deepseek-v3.2",
+            "stage": "research",
+            "status": "ok"
+          },
+          {
+            "actual_model": "deepseek-v3.2",
+            "completion_tokens": 63,
+            "elapsed_seconds": 1.7909493000006478,
+            "prompt_tokens": 4864,
+            "requested_model": "deepseek-v3.2",
+            "stage": "research",
+            "status": "ok"
+          },
+          {
+            "actual_model": "deepseek-v3.2",
+            "completion_tokens": 66,
+            "elapsed_seconds": 1.9514264999997977,
+            "prompt_tokens": 6826,
+            "requested_model": "deepseek-v3.2",
+            "stage": "research",
+            "status": "ok"
+          },
+          {
+            "actual_model": "deepseek-v3.2",
+            "completion_tokens": 64,
+            "elapsed_seconds": 1.982681000001321,
+            "prompt_tokens": 6467,
+            "requested_model": "deepseek-v3.2",
+            "stage": "research",
+            "status": "ok"
+          },
+          {
+            "actual_model": "deepseek-v3.2",
+            "completion_tokens": 318,
+            "elapsed_seconds": 6.584992399999464,
+            "prompt_tokens": 8691,
+            "requested_model": "deepseek-v3.2",
+            "stage": "research",
+            "status": "ok"
+          },
+          {
+            "actual_model": "deepseek-v3.2",
+            "completion_tokens": 478,
+            "elapsed_seconds": 9.00668930000029,
+            "prompt_tokens": 9296,
+            "requested_model": "deepseek-v3.2",
+            "stage": "research",
+            "status": "ok"
+          },
+          {
+            "actual_model": "deepseek-v3.2",
+            "completion_tokens": 326,
+            "elapsed_seconds": 5.993055300001288,
+            "prompt_tokens": 8062,
+            "requested_model": "deepseek-v3.2",
+            "stage": "research",
+            "status": "ok"
+          },
+          {
+            "actual_model": "deepseek-v3.2",
+            "completion_tokens": 478,
+            "elapsed_seconds": 8.070367699998314,
+            "prompt_tokens": 9887,
+            "requested_model": "deepseek-v3.2",
+            "stage": "research",
+            "status": "ok"
+          },
+          {
+            "actual_model": "deepseek-v3.2",
+            "completion_tokens": 57,
+            "elapsed_seconds": 1.7285812000009173,
+            "prompt_tokens": 4909,
+            "requested_model": "deepseek-v3.2",
+            "stage": "research",
+            "status": "ok"
+          },
+          {
+            "actual_model": "deepseek-v3.2",
+            "completion_tokens": 57,
+            "elapsed_seconds": 1.6893130999997084,
+            "prompt_tokens": 5079,
+            "requested_model": "deepseek-v3.2",
+            "stage": "research",
+            "status": "ok"
+          },
+          {
+            "actual_model": "deepseek-v3.2",
+            "completion_tokens": 241,
+            "elapsed_seconds": 4.723854100000608,
+            "prompt_tokens": 1230,
+            "requested_model": "deepseek-v3.2",
+            "stage": "verify",
+            "status": "ok"
+          },
+          {
+            "actual_model": "deepseek-v3.2",
+            "completion_tokens": 65,
+            "elapsed_seconds": 1.8299958999996306,
+            "prompt_tokens": 1110,
+            "requested_model": "deepseek-v3.2",
+            "stage": "research",
+            "status": "ok"
+          },
+          {
+            "actual_model": "deepseek-v3.2",
+            "completion_tokens": 75,
+            "elapsed_seconds": 2.057080099999439,
+            "prompt_tokens": 1139,
+            "requested_model": "deepseek-v3.2",
+            "stage": "research",
+            "status": "ok"
+          },
+          {
+            "actual_model": "deepseek-v3.2",
+            "completion_tokens": 78,
+            "elapsed_seconds": 2.094329100000323,
+            "prompt_tokens": 1147,
+            "requested_model": "deepseek-v3.2",
+            "stage": "research",
+            "status": "ok"
+          },
+          {
+            "actual_model": "deepseek-v3.2",
+            "completion_tokens": 57,
+            "elapsed_seconds": 1.7743703999985883,
+            "prompt_tokens": 4097,
+            "requested_model": "deepseek-v3.2",
+            "stage": "research",
+            "status": "ok"
+          },
+          {
+            "actual_model": "deepseek-v3.2",
+            "completion_tokens": 57,
+            "elapsed_seconds": 1.8861109999998007,
+            "prompt_tokens": 4267,
+            "requested_model": "deepseek-v3.2",
+            "stage": "research",
+            "status": "ok"
+          },
+          {
+            "actual_model": "deepseek-v3.2",
+            "completion_tokens": 393,
+            "elapsed_seconds": 7.527221700001974,
+            "prompt_tokens": 3352,
+            "requested_model": "deepseek-v3.2",
+            "stage": "research",
+            "status": "ok"
+          },
+          {
+            "actual_model": "deepseek-v3.2",
+            "completion_tokens": 504,
+            "elapsed_seconds": 8.772501200000988,
+            "prompt_tokens": 3991,
+            "requested_model": "deepseek-v3.2",
+            "stage": "research",
+            "status": "ok"
+          },
+          {
+            "actual_model": "deepseek-v3.2",
+            "completion_tokens": 393,
+            "elapsed_seconds": 7.114959800001088,
+            "prompt_tokens": 3858,
+            "requested_model": "deepseek-v3.2",
+            "stage": "research",
+            "status": "ok"
+          },
+          {
+            "actual_model": "deepseek-v3.2",
+            "completion_tokens": 241,
+            "elapsed_seconds": 4.550083999998606,
+            "prompt_tokens": 1230,
+            "requested_model": "deepseek-v3.2",
+            "stage": "verify",
+            "status": "ok"
+          },
+          {
+            "actual_model": "deepseek-v3.2",
+            "completion_tokens": 390,
+            "elapsed_seconds": 7.155210000000807,
+            "prompt_tokens": 1774,
+            "requested_model": "deepseek-v3.2",
+            "stage": "verify",
+            "status": "ok"
+          },
+          {
+            "actual_model": "deepseek-v3.2",
+            "completion_tokens": 56,
+            "elapsed_seconds": 1.56141949999801,
+            "prompt_tokens": 1071,
+            "requested_model": "deepseek-v3.2",
+            "stage": "research",
+            "status": "ok"
+          },
+          {
+            "actual_model": "deepseek-v3.2",
+            "completion_tokens": 192,
+            "elapsed_seconds": 3.9229460999995354,
+            "prompt_tokens": 1230,
+            "requested_model": "deepseek-v3.2",
+            "stage": "verify",
+            "status": "ok"
+          },
+          {
+            "actual_model": "deepseek-v3.2",
+            "completion_tokens": 390,
+            "elapsed_seconds": 7.109734199999366,
+            "prompt_tokens": 1774,
+            "requested_model": "deepseek-v3.2",
+            "stage": "verify",
+            "status": "ok"
+          },
+          {
+            "actual_model": "deepseek-v3.2",
+            "completion_tokens": 196,
+            "elapsed_seconds": 4.041679599999043,
+            "prompt_tokens": 1547,
+            "requested_model": "deepseek-v3.2",
+            "stage": "write",
+            "status": "ok"
+          },
+          {
+            "actual_model": "deepseek-v3.2",
+            "completion_tokens": 137,
+            "elapsed_seconds": 3.094449000000168,
+            "prompt_tokens": 1406,
+            "requested_model": "deepseek-v3.2",
+            "stage": "verify_judgments",
+            "status": "ok"
+          }
+        ],
+        "model_calls": 32,
+        "model_fallbacks": [],
+        "models": {
+          "deepseek-v3.2": {
+            "calls": 32,
+            "completion_tokens": 6028,
+            "prompt_tokens": 114489
+          }
+        },
+        "prompt_tokens": 114489,
+        "read_calls": 3,
+        "reused_snapshots": 0,
+        "search_calls": 7
+      }
+    }
+  ],
+  "reports": [],
+  "evidence": [],
+  "source_snapshots": [],
+  "note": "真实运行原始结果；completed仅表示结构化流程完成，事实支持需独立审计。"
+}

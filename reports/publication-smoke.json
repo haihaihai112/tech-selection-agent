@@ -1,0 +1,1816 @@
+{
+  "health": {
+    "status": "ok",
+    "config": {
+      "mode": "fixture",
+      "model": "deepseek-v3.2",
+      "fallback_models": [],
+      "llm_configured": true,
+      "search_configured": false,
+      "search_limit": 18,
+      "read_limit": 24,
+      "research_steps": 8,
+      "repair_rounds": 2,
+      "task_timeout": 300.0
+    },
+    "provider_connectivity": "not_checked",
+    "local_single_user": true
+  },
+  "tasks": [
+    {
+      "active_seconds": 0.01600000000144064,
+      "base_version": null,
+      "brief": {
+        "constraints": {},
+        "dimensions": [
+          "部署方式",
+          "已有技术栈",
+          "检索与过滤",
+          "维护要求",
+          "扩展方式"
+        ],
+        "group": "vector_databases",
+        "preferences": [
+          "维护成本"
+        ],
+        "products": [
+          "pgvector",
+          "Qdrant",
+          "Milvus"
+        ],
+        "questions": [
+          "部署要求（本地、自托管或托管服务）",
+          "已有技术栈（例如是否使用PostgreSQL）"
+        ],
+        "requested_versions": {},
+        "unknowns": []
+      },
+      "checkpoint": "clarify",
+      "claims": [],
+      "created_at": "2026-10-14T08:47:37.325125+00:00",
+      "error": null,
+      "evidence_ids": [],
+      "id": "7ecdb93564834d318fc5354e2980c7a5",
+      "input": {
+        "allow_unknown": false,
+        "custom_catalog": null,
+        "force_refresh": false,
+        "group": "vector_databases",
+        "query": "为个人知识库比较三款向量数据库，优先维护成本。",
+        "requested_versions": {},
+        "session_id": "397cfa87ddb048409244d479c2258126"
+      },
+      "model_mode": "fixture",
+      "repair_round": 0,
+      "report_id": "52b03fe656d145538b706d263a94b183",
+      "research_steps": {},
+      "session_id": "397cfa87ddb048409244d479c2258126",
+      "snapshot_ids": [],
+      "status": "input_required",
+      "summary_only_ids": [],
+      "trace": [
+        {
+          "operation": "clarify",
+          "questions": [
+            "部署要求（本地、自托管或托管服务）",
+            "已有技术栈（例如是否使用PostgreSQL）"
+          ],
+          "status": "input_required"
+        }
+      ],
+      "updated_at": "2026-10-14T08:47:37.342523+00:00",
+      "usage": {
+        "completion_tokens": 0,
+        "cost_note": "单价只适用于配置的主模型；切换或供应商返回不同模型名时费用未知。失败调用是否计费以账单为准；币种不混加。",
+        "exhausted_models": [],
+        "failed_calls": 0,
+        "llm_cost_cny": null,
+        "model_attempts": [],
+        "model_calls": 1,
+        "model_fallbacks": [],
+        "models": {},
+        "prompt_tokens": 0,
+        "read_calls": 0,
+        "reused_snapshots": 0,
+        "search_calls": 0,
+        "search_cost_usd": null,
+        "token_measurement": "not_applicable_fixture"
+      },
+      "usage_counters": {
+        "completion_tokens": 0,
+        "exhausted_models": [],
+        "failed_calls": 0,
+        "model_attempts": [],
+        "model_calls": 1,
+        "model_fallbacks": [],
+        "models": {},
+        "prompt_tokens": 0,
+        "read_calls": 0,
+        "reused_snapshots": 0,
+        "search_calls": 0
+      }
+    },
+    {
+      "active_seconds": 0.34500000000116415,
+      "answer": "\n本地部署，其他条件暂不确定。",
+      "base_version": null,
+      "brief": {
+        "constraints": {
+          "部署要求": "本地或自托管"
+        },
+        "dimensions": [
+          "部署方式",
+          "已有技术栈",
+          "检索与过滤",
+          "维护要求",
+          "扩展方式"
+        ],
+        "group": "vector_databases",
+        "preferences": [
+          "维护成本"
+        ],
+        "products": [
+          "pgvector",
+          "Qdrant",
+          "Milvus"
+        ],
+        "questions": [],
+        "requested_versions": {},
+        "unknowns": [
+          "已有技术栈（例如是否使用PostgreSQL）"
+        ]
+      },
+      "checkpoint": "reported",
+      "claims": [
+        {
+          "attribute": "部署方式",
+          "conflicting_ids": [],
+          "dimension": "部署方式",
+          "evidence_ids": [
+            "E-b608974dfb8b598580ebdb7e-0"
+          ],
+          "id": "C-1f1ffa1d36f348da",
+          "product": "pgvector",
+          "reason": "测试替身仅验证逐字证据对应，不是语义能力实测。",
+          "scope": {},
+          "status": "supported",
+          "text": "部署方式：【测试设定】pgvector的部署方式应根据用户条件进一步检查；不代表真实产品事实。",
+          "value": "【测试设定】pgvector的部署方式应根据用户条件进一步检查；不代表真实产品事实。"
+        },
+        {
+          "attribute": "已有技术栈",
+          "conflicting_ids": [],
+          "dimension": "已有技术栈",
+          "evidence_ids": [
+            "E-b608974dfb8b598580ebdb7e-1"
+          ],
+          "id": "C-87212e065ddd4a47",
+          "product": "pgvector",
+          "reason": "测试替身仅验证逐字证据对应，不是语义能力实测。",
+          "scope": {},
+          "status": "supported",
+          "text": "已有技术栈：【测试设定】pgvector的已有技术栈应根据用户条件进一步检查；不代表真实产品事实。",
+          "value": "【测试设定】pgvector的已有技术栈应根据用户条件进一步检查；不代表真实产品事实。"
+        },
+        {
+          "attribute": "检索与过滤",
+          "conflicting_ids": [],
+          "dimension": "检索与过滤",
+          "evidence_ids": [
+            "E-b608974dfb8b598580ebdb7e-2"
+          ],
+          "id": "C-13210f0397904cf9",
+          "product": "pgvector",
+          "reason": "测试替身仅验证逐字证据对应，不是语义能力实测。",
+          "scope": {},
+          "status": "supported",
+          "text": "检索与过滤：【测试设定】pgvector的检索与过滤应根据用户条件进一步检查；不代表真实产品事实。",
+          "value": "【测试设定】pgvector的检索与过滤应根据用户条件进一步检查；不代表真实产品事实。"
+        },
+        {
+          "attribute": "维护要求",
+          "conflicting_ids": [],
+          "dimension": "维护要求",
+          "evidence_ids": [
+            "E-b608974dfb8b598580ebdb7e-3"
+          ],
+          "id": "C-25ef7c20d5ee4c39",
+          "product": "pgvector",
+          "reason": "测试替身仅验证逐字证据对应，不是语义能力实测。",
+          "scope": {},
+          "status": "supported",
+          "text": "维护要求：【测试设定】pgvector的维护要求应根据用户条件进一步检查；不代表真实产品事实。",
+          "value": "【测试设定】pgvector的维护要求应根据用户条件进一步检查；不代表真实产品事实。"
+        },
+        {
+          "attribute": "扩展方式",
+          "conflicting_ids": [],
+          "dimension": "扩展方式",
+          "evidence_ids": [
+            "E-b608974dfb8b598580ebdb7e-4"
+          ],
+          "id": "C-ff91c7cb2ac942f5",
+          "product": "pgvector",
+          "reason": "测试替身仅验证逐字证据对应，不是语义能力实测。",
+          "scope": {},
+          "status": "supported",
+          "text": "扩展方式：【测试设定】pgvector的扩展方式应根据用户条件进一步检查；不代表真实产品事实。",
+          "value": "【测试设定】pgvector的扩展方式应根据用户条件进一步检查；不代表真实产品事实。"
+        },
+        {
+          "attribute": "部署方式",
+          "conflicting_ids": [],
+          "dimension": "部署方式",
+          "evidence_ids": [
+            "E-0c0045f7cf24b6bedd5760f9-0"
+          ],
+          "id": "C-f9a2e39b5f474887",
+          "product": "Qdrant",
+          "reason": "测试替身仅验证逐字证据对应，不是语义能力实测。",
+          "scope": {},
+          "status": "supported",
+          "text": "部署方式：【测试设定】Qdrant的部署方式应根据用户条件进一步检查；不代表真实产品事实。",
+          "value": "【测试设定】Qdrant的部署方式应根据用户条件进一步检查；不代表真实产品事实。"
+        },
+        {
+          "attribute": "已有技术栈",
+          "conflicting_ids": [],
+          "dimension": "已有技术栈",
+          "evidence_ids": [
+            "E-0c0045f7cf24b6bedd5760f9-1"
+          ],
+          "id": "C-5a5dae796a014361",
+          "product": "Qdrant",
+          "reason": "测试替身仅验证逐字证据对应，不是语义能力实测。",
+          "scope": {},
+          "status": "supported",
+          "text": "已有技术栈：【测试设定】Qdrant的已有技术栈应根据用户条件进一步检查；不代表真实产品事实。",
+          "value": "【测试设定】Qdrant的已有技术栈应根据用户条件进一步检查；不代表真实产品事实。"
+        },
+        {
+          "attribute": "检索与过滤",
+          "conflicting_ids": [],
+          "dimension": "检索与过滤",
+          "evidence_ids": [
+            "E-0c0045f7cf24b6bedd5760f9-2"
+          ],
+          "id": "C-18eec27a5aa14278",
+          "product": "Qdrant",
+          "reason": "测试替身仅验证逐字证据对应，不是语义能力实测。",
+          "scope": {},
+          "status": "supported",
+          "text": "检索与过滤：【测试设定】Qdrant的检索与过滤应根据用户条件进一步检查；不代表真实产品事实。",
+          "value": "【测试设定】Qdrant的检索与过滤应根据用户条件进一步检查；不代表真实产品事实。"
+        },
+        {
+          "attribute": "维护要求",
+          "conflicting_ids": [],
+          "dimension": "维护要求",
+          "evidence_ids": [
+            "E-0c0045f7cf24b6bedd5760f9-3"
+          ],
+          "id": "C-43090a57cb374342",
+          "product": "Qdrant",
+          "reason": "测试替身仅验证逐字证据对应，不是语义能力实测。",
+          "scope": {},
+          "status": "supported",
+          "text": "维护要求：【测试设定】Qdrant的维护要求应根据用户条件进一步检查；不代表真实产品事实。",
+          "value": "【测试设定】Qdrant的维护要求应根据用户条件进一步检查；不代表真实产品事实。"
+        },
+        {
+          "attribute": "扩展方式",
+          "conflicting_ids": [],
+          "dimension": "扩展方式",
+          "evidence_ids": [
+            "E-0c0045f7cf24b6bedd5760f9-4"
+          ],
+          "id": "C-6a6358af8d6346c1",
+          "product": "Qdrant",
+          "reason": "测试替身仅验证逐字证据对应，不是语义能力实测。",
+          "scope": {},
+          "status": "supported",
+          "text": "扩展方式：【测试设定】Qdrant的扩展方式应根据用户条件进一步检查；不代表真实产品事实。",
+          "value": "【测试设定】Qdrant的扩展方式应根据用户条件进一步检查；不代表真实产品事实。"
+        },
+        {
+          "attribute": "部署方式",
+          "conflicting_ids": [],
+          "dimension": "部署方式",
+          "evidence_ids": [
+            "E-695229711483afd84c8798d6-0"
+          ],
+          "id": "C-fd6f0d4cfd204245",
+          "product": "Milvus",
+          "reason": "测试替身仅验证逐字证据对应，不是语义能力实测。",
+          "scope": {},
+          "status": "supported",
+          "text": "部署方式：【测试设定】Milvus的部署方式应根据用户条件进一步检查；不代表真实产品事实。",
+          "value": "【测试设定】Milvus的部署方式应根据用户条件进一步检查；不代表真实产品事实。"
+        },
+        {
+          "attribute": "已有技术栈",
+          "conflicting_ids": [],
+          "dimension": "已有技术栈",
+          "evidence_ids": [
+            "E-695229711483afd84c8798d6-1"
+          ],
+          "id": "C-93a0d965cb8d4918",
+          "product": "Milvus",
+          "reason": "测试替身仅验证逐字证据对应，不是语义能力实测。",
+          "scope": {},
+          "status": "supported",
+          "text": "已有技术栈：【测试设定】Milvus的已有技术栈应根据用户条件进一步检查；不代表真实产品事实。",
+          "value": "【测试设定】Milvus的已有技术栈应根据用户条件进一步检查；不代表真实产品事实。"
+        },
+        {
+          "attribute": "检索与过滤",
+          "conflicting_ids": [],
+          "dimension": "检索与过滤",
+          "evidence_ids": [
+            "E-695229711483afd84c8798d6-2"
+          ],
+          "id": "C-6e345a247ffc4dfc",
+          "product": "Milvus",
+          "reason": "测试替身仅验证逐字证据对应，不是语义能力实测。",
+          "scope": {},
+          "status": "supported",
+          "text": "检索与过滤：【测试设定】Milvus的检索与过滤应根据用户条件进一步检查；不代表真实产品事实。",
+          "value": "【测试设定】Milvus的检索与过滤应根据用户条件进一步检查；不代表真实产品事实。"
+        },
+        {
+          "attribute": "维护要求",
+          "conflicting_ids": [],
+          "dimension": "维护要求",
+          "evidence_ids": [
+            "E-695229711483afd84c8798d6-3"
+          ],
+          "id": "C-4ab795febd3a49a7",
+          "product": "Milvus",
+          "reason": "测试替身仅验证逐字证据对应，不是语义能力实测。",
+          "scope": {},
+          "status": "supported",
+          "text": "维护要求：【测试设定】Milvus的维护要求应根据用户条件进一步检查；不代表真实产品事实。",
+          "value": "【测试设定】Milvus的维护要求应根据用户条件进一步检查；不代表真实产品事实。"
+        },
+        {
+          "attribute": "扩展方式",
+          "conflicting_ids": [],
+          "dimension": "扩展方式",
+          "evidence_ids": [
+            "E-695229711483afd84c8798d6-4"
+          ],
+          "id": "C-b51ca76a8c5149d1",
+          "product": "Milvus",
+          "reason": "测试替身仅验证逐字证据对应，不是语义能力实测。",
+          "scope": {},
+          "status": "supported",
+          "text": "扩展方式：【测试设定】Milvus的扩展方式应根据用户条件进一步检查；不代表真实产品事实。",
+          "value": "【测试设定】Milvus的扩展方式应根据用户条件进一步检查；不代表真实产品事实。"
+        }
+      ],
+      "created_at": "2026-10-14T08:47:37.325125+00:00",
+      "error": null,
+      "evidence_ids": [
+        "E-0c0045f7cf24b6bedd5760f9-0",
+        "E-0c0045f7cf24b6bedd5760f9-1",
+        "E-0c0045f7cf24b6bedd5760f9-2",
+        "E-0c0045f7cf24b6bedd5760f9-3",
+        "E-0c0045f7cf24b6bedd5760f9-4",
+        "E-695229711483afd84c8798d6-0",
+        "E-695229711483afd84c8798d6-1",
+        "E-695229711483afd84c8798d6-2",
+        "E-695229711483afd84c8798d6-3",
+        "E-695229711483afd84c8798d6-4",
+        "E-b608974dfb8b598580ebdb7e-0",
+        "E-b608974dfb8b598580ebdb7e-1",
+        "E-b608974dfb8b598580ebdb7e-2",
+        "E-b608974dfb8b598580ebdb7e-3",
+        "E-b608974dfb8b598580ebdb7e-4"
+      ],
+      "id": "7ecdb93564834d318fc5354e2980c7a5",
+      "input": {
+        "allow_unknown": true,
+        "custom_catalog": null,
+        "force_refresh": false,
+        "group": "vector_databases",
+        "query": "为个人知识库比较三款向量数据库，优先维护成本。",
+        "requested_versions": {},
+        "session_id": "397cfa87ddb048409244d479c2258126"
+      },
+      "model_mode": "fixture",
+      "repair_round": 0,
+      "report_id": "52b03fe656d145538b706d263a94b183",
+      "report_version": 1,
+      "research_steps": {
+        "Milvus": 3,
+        "Qdrant": 3,
+        "pgvector": 3
+      },
+      "session_id": "397cfa87ddb048409244d479c2258126",
+      "snapshot_ids": [
+        "0c0045f7cf24b6bedd5760f9",
+        "695229711483afd84c8798d6",
+        "b608974dfb8b598580ebdb7e"
+      ],
+      "status": "completed",
+      "summary_only_ids": [
+        "256a172880abd017963f6a14",
+        "ae822e8ba0965a462b6485e8",
+        "d3ccca719e4a5e9823969310"
+      ],
+      "trace": [
+        {
+          "operation": "clarify",
+          "questions": [
+            "部署要求（本地、自托管或托管服务）",
+            "已有技术栈（例如是否使用PostgreSQL）"
+          ],
+          "status": "input_required"
+        },
+        {
+          "operation": "clarify",
+          "questions": [],
+          "status": "working"
+        },
+        {
+          "operation": "research_round",
+          "round": 0,
+          "status": "working",
+          "targets": {
+            "Milvus": [
+              "部署方式",
+              "已有技术栈",
+              "检索与过滤",
+              "维护要求",
+              "扩展方式"
+            ],
+            "Qdrant": [
+              "部署方式",
+              "已有技术栈",
+              "检索与过滤",
+              "维护要求",
+              "扩展方式"
+            ],
+            "pgvector": [
+              "部署方式",
+              "已有技术栈",
+              "检索与过滤",
+              "维护要求",
+              "扩展方式"
+            ]
+          }
+        },
+        {
+          "operation": "model_decision",
+          "product": "pgvector",
+          "status": "ok",
+          "step": 1,
+          "tools": [
+            "search"
+          ]
+        },
+        {
+          "count": 1,
+          "elapsed_ms": 3.74,
+          "operation": "search",
+          "product": "pgvector",
+          "status": "ok"
+        },
+        {
+          "operation": "model_decision",
+          "product": "pgvector",
+          "status": "ok",
+          "step": 2,
+          "tools": [
+            "read_page"
+          ]
+        },
+        {
+          "elapsed_ms": 29.38,
+          "operation": "read_page",
+          "product": "pgvector",
+          "snapshot_id": "b608974dfb8b598580ebdb7e",
+          "status": "ok"
+        },
+        {
+          "operation": "model_decision",
+          "product": "pgvector",
+          "status": "ok",
+          "step": 3,
+          "tools": [
+            "submit_findings"
+          ]
+        },
+        {
+          "claims": 5,
+          "gaps": [],
+          "operation": "submit_findings",
+          "product": "pgvector",
+          "status": "ok"
+        },
+        {
+          "operation": "model_decision",
+          "product": "Qdrant",
+          "status": "ok",
+          "step": 1,
+          "tools": [
+            "search"
+          ]
+        },
+        {
+          "count": 1,
+          "elapsed_ms": 4.69,
+          "operation": "search",
+          "product": "Qdrant",
+          "status": "ok"
+        },
+        {
+          "operation": "model_decision",
+          "product": "Qdrant",
+          "status": "ok",
+          "step": 2,
+          "tools": [
+            "read_page"
+          ]
+        },
+        {
+          "elapsed_ms": 28.83,
+          "operation": "read_page",
+          "product": "Qdrant",
+          "snapshot_id": "0c0045f7cf24b6bedd5760f9",
+          "status": "ok"
+        },
+        {
+          "operation": "model_decision",
+          "product": "Qdrant",
+          "status": "ok",
+          "step": 3,
+          "tools": [
+            "submit_findings"
+          ]
+        },
+        {
+          "claims": 5,
+          "gaps": [],
+          "operation": "submit_findings",
+          "product": "Qdrant",
+          "status": "ok"
+        },
+        {
+          "operation": "model_decision",
+          "product": "Milvus",
+          "status": "ok",
+          "step": 1,
+          "tools": [
+            "search"
+          ]
+        },
+        {
+          "count": 1,
+          "elapsed_ms": 4.18,
+          "operation": "search",
+          "product": "Milvus",
+          "status": "ok"
+        },
+        {
+          "operation": "model_decision",
+          "product": "Milvus",
+          "status": "ok",
+          "step": 2,
+          "tools": [
+            "read_page"
+          ]
+        },
+        {
+          "elapsed_ms": 28.15,
+          "operation": "read_page",
+          "product": "Milvus",
+          "snapshot_id": "695229711483afd84c8798d6",
+          "status": "ok"
+        },
+        {
+          "operation": "model_decision",
+          "product": "Milvus",
+          "status": "ok",
+          "step": 3,
+          "tools": [
+            "submit_findings"
+          ]
+        },
+        {
+          "claims": 5,
+          "gaps": [],
+          "operation": "submit_findings",
+          "product": "Milvus",
+          "status": "ok"
+        },
+        {
+          "elapsed_ms": 108.97,
+          "operation": "verify",
+          "product": "all",
+          "status": "ok",
+          "supported": 15,
+          "unresolved": 0
+        }
+      ],
+      "updated_at": "2026-10-14T08:47:37.690561+00:00",
+      "usage": {
+        "completion_tokens": 0,
+        "cost_note": "单价只适用于配置的主模型；切换或供应商返回不同模型名时费用未知。失败调用是否计费以账单为准；币种不混加。",
+        "exhausted_models": [],
+        "failed_calls": 0,
+        "llm_cost_cny": null,
+        "model_attempts": [],
+        "model_calls": 16,
+        "model_fallbacks": [],
+        "models": {},
+        "prompt_tokens": 0,
+        "read_calls": 3,
+        "reused_snapshots": 0,
+        "search_calls": 3,
+        "search_cost_usd": null,
+        "token_measurement": "not_applicable_fixture"
+      },
+      "usage_counters": {
+        "completion_tokens": 0,
+        "exhausted_models": [],
+        "failed_calls": 0,
+        "model_attempts": [],
+        "model_calls": 16,
+        "model_fallbacks": [],
+        "models": {},
+        "prompt_tokens": 0,
+        "read_calls": 3,
+        "reused_snapshots": 0,
+        "search_calls": 3
+      }
+    },
+    {
+      "active_seconds": 0.375,
+      "base_version": 1,
+      "brief": {
+        "constraints": {
+          "已有技术栈": "PostgreSQL",
+          "部署要求": "本地或自托管"
+        },
+        "dimensions": [
+          "部署方式",
+          "已有技术栈",
+          "检索与过滤",
+          "维护要求",
+          "扩展方式"
+        ],
+        "group": "vector_databases",
+        "preferences": [
+          "维护成本"
+        ],
+        "products": [
+          "pgvector",
+          "Qdrant",
+          "Milvus"
+        ],
+        "questions": [],
+        "requested_versions": {},
+        "unknowns": []
+      },
+      "checkpoint": "reported",
+      "claims": [
+        {
+          "attribute": "部署方式",
+          "conflicting_ids": [],
+          "dimension": "部署方式",
+          "evidence_ids": [
+            "E-b608974dfb8b598580ebdb7e-0"
+          ],
+          "id": "C-1f1ffa1d36f348da",
+          "product": "pgvector",
+          "reason": "测试替身仅验证逐字证据对应，不是语义能力实测。",
+          "scope": {},
+          "status": "supported",
+          "text": "部署方式：【测试设定】pgvector的部署方式应根据用户条件进一步检查；不代表真实产品事实。",
+          "value": "【测试设定】pgvector的部署方式应根据用户条件进一步检查；不代表真实产品事实。"
+        },
+        {
+          "attribute": "已有技术栈",
+          "conflicting_ids": [],
+          "dimension": "已有技术栈",
+          "evidence_ids": [
+            "E-b608974dfb8b598580ebdb7e-1"
+          ],
+          "id": "C-87212e065ddd4a47",
+          "product": "pgvector",
+          "reason": "测试替身仅验证逐字证据对应，不是语义能力实测。",
+          "scope": {},
+          "status": "supported",
+          "text": "已有技术栈：【测试设定】pgvector的已有技术栈应根据用户条件进一步检查；不代表真实产品事实。",
+          "value": "【测试设定】pgvector的已有技术栈应根据用户条件进一步检查；不代表真实产品事实。"
+        },
+        {
+          "attribute": "检索与过滤",
+          "conflicting_ids": [],
+          "dimension": "检索与过滤",
+          "evidence_ids": [
+            "E-b608974dfb8b598580ebdb7e-2"
+          ],
+          "id": "C-13210f0397904cf9",
+          "product": "pgvector",
+          "reason": "测试替身仅验证逐字证据对应，不是语义能力实测。",
+          "scope": {},
+          "status": "supported",
+          "text": "检索与过滤：【测试设定】pgvector的检索与过滤应根据用户条件进一步检查；不代表真实产品事实。",
+          "value": "【测试设定】pgvector的检索与过滤应根据用户条件进一步检查；不代表真实产品事实。"
+        },
+        {
+          "attribute": "维护要求",
+          "conflicting_ids": [],
+          "dimension": "维护要求",
+          "evidence_ids": [
+            "E-b608974dfb8b598580ebdb7e-3"
+          ],
+          "id": "C-25ef7c20d5ee4c39",
+          "product": "pgvector",
+          "reason": "测试替身仅验证逐字证据对应，不是语义能力实测。",
+          "scope": {},
+          "status": "supported",
+          "text": "维护要求：【测试设定】pgvector的维护要求应根据用户条件进一步检查；不代表真实产品事实。",
+          "value": "【测试设定】pgvector的维护要求应根据用户条件进一步检查；不代表真实产品事实。"
+        },
+        {
+          "attribute": "扩展方式",
+          "conflicting_ids": [],
+          "dimension": "扩展方式",
+          "evidence_ids": [
+            "E-b608974dfb8b598580ebdb7e-4"
+          ],
+          "id": "C-ff91c7cb2ac942f5",
+          "product": "pgvector",
+          "reason": "测试替身仅验证逐字证据对应，不是语义能力实测。",
+          "scope": {},
+          "status": "supported",
+          "text": "扩展方式：【测试设定】pgvector的扩展方式应根据用户条件进一步检查；不代表真实产品事实。",
+          "value": "【测试设定】pgvector的扩展方式应根据用户条件进一步检查；不代表真实产品事实。"
+        },
+        {
+          "attribute": "部署方式",
+          "conflicting_ids": [],
+          "dimension": "部署方式",
+          "evidence_ids": [
+            "E-0c0045f7cf24b6bedd5760f9-0"
+          ],
+          "id": "C-f9a2e39b5f474887",
+          "product": "Qdrant",
+          "reason": "测试替身仅验证逐字证据对应，不是语义能力实测。",
+          "scope": {},
+          "status": "supported",
+          "text": "部署方式：【测试设定】Qdrant的部署方式应根据用户条件进一步检查；不代表真实产品事实。",
+          "value": "【测试设定】Qdrant的部署方式应根据用户条件进一步检查；不代表真实产品事实。"
+        },
+        {
+          "attribute": "已有技术栈",
+          "conflicting_ids": [],
+          "dimension": "已有技术栈",
+          "evidence_ids": [
+            "E-0c0045f7cf24b6bedd5760f9-1"
+          ],
+          "id": "C-5a5dae796a014361",
+          "product": "Qdrant",
+          "reason": "测试替身仅验证逐字证据对应，不是语义能力实测。",
+          "scope": {},
+          "status": "supported",
+          "text": "已有技术栈：【测试设定】Qdrant的已有技术栈应根据用户条件进一步检查；不代表真实产品事实。",
+          "value": "【测试设定】Qdrant的已有技术栈应根据用户条件进一步检查；不代表真实产品事实。"
+        },
+        {
+          "attribute": "检索与过滤",
+          "conflicting_ids": [],
+          "dimension": "检索与过滤",
+          "evidence_ids": [
+            "E-0c0045f7cf24b6bedd5760f9-2"
+          ],
+          "id": "C-18eec27a5aa14278",
+          "product": "Qdrant",
+          "reason": "测试替身仅验证逐字证据对应，不是语义能力实测。",
+          "scope": {},
+          "status": "supported",
+          "text": "检索与过滤：【测试设定】Qdrant的检索与过滤应根据用户条件进一步检查；不代表真实产品事实。",
+          "value": "【测试设定】Qdrant的检索与过滤应根据用户条件进一步检查；不代表真实产品事实。"
+        },
+        {
+          "attribute": "维护要求",
+          "conflicting_ids": [],
+          "dimension": "维护要求",
+          "evidence_ids": [
+            "E-0c0045f7cf24b6bedd5760f9-3"
+          ],
+          "id": "C-43090a57cb374342",
+          "product": "Qdrant",
+          "reason": "测试替身仅验证逐字证据对应，不是语义能力实测。",
+          "scope": {},
+          "status": "supported",
+          "text": "维护要求：【测试设定】Qdrant的维护要求应根据用户条件进一步检查；不代表真实产品事实。",
+          "value": "【测试设定】Qdrant的维护要求应根据用户条件进一步检查；不代表真实产品事实。"
+        },
+        {
+          "attribute": "扩展方式",
+          "conflicting_ids": [],
+          "dimension": "扩展方式",
+          "evidence_ids": [
+            "E-0c0045f7cf24b6bedd5760f9-4"
+          ],
+          "id": "C-6a6358af8d6346c1",
+          "product": "Qdrant",
+          "reason": "测试替身仅验证逐字证据对应，不是语义能力实测。",
+          "scope": {},
+          "status": "supported",
+          "text": "扩展方式：【测试设定】Qdrant的扩展方式应根据用户条件进一步检查；不代表真实产品事实。",
+          "value": "【测试设定】Qdrant的扩展方式应根据用户条件进一步检查；不代表真实产品事实。"
+        },
+        {
+          "attribute": "部署方式",
+          "conflicting_ids": [],
+          "dimension": "部署方式",
+          "evidence_ids": [
+            "E-695229711483afd84c8798d6-0"
+          ],
+          "id": "C-fd6f0d4cfd204245",
+          "product": "Milvus",
+          "reason": "测试替身仅验证逐字证据对应，不是语义能力实测。",
+          "scope": {},
+          "status": "supported",
+          "text": "部署方式：【测试设定】Milvus的部署方式应根据用户条件进一步检查；不代表真实产品事实。",
+          "value": "【测试设定】Milvus的部署方式应根据用户条件进一步检查；不代表真实产品事实。"
+        },
+        {
+          "attribute": "已有技术栈",
+          "conflicting_ids": [],
+          "dimension": "已有技术栈",
+          "evidence_ids": [
+            "E-695229711483afd84c8798d6-1"
+          ],
+          "id": "C-93a0d965cb8d4918",
+          "product": "Milvus",
+          "reason": "测试替身仅验证逐字证据对应，不是语义能力实测。",
+          "scope": {},
+          "status": "supported",
+          "text": "已有技术栈：【测试设定】Milvus的已有技术栈应根据用户条件进一步检查；不代表真实产品事实。",
+          "value": "【测试设定】Milvus的已有技术栈应根据用户条件进一步检查；不代表真实产品事实。"
+        },
+        {
+          "attribute": "检索与过滤",
+          "conflicting_ids": [],
+          "dimension": "检索与过滤",
+          "evidence_ids": [
+            "E-695229711483afd84c8798d6-2"
+          ],
+          "id": "C-6e345a247ffc4dfc",
+          "product": "Milvus",
+          "reason": "测试替身仅验证逐字证据对应，不是语义能力实测。",
+          "scope": {},
+          "status": "supported",
+          "text": "检索与过滤：【测试设定】Milvus的检索与过滤应根据用户条件进一步检查；不代表真实产品事实。",
+          "value": "【测试设定】Milvus的检索与过滤应根据用户条件进一步检查；不代表真实产品事实。"
+        },
+        {
+          "attribute": "维护要求",
+          "conflicting_ids": [],
+          "dimension": "维护要求",
+          "evidence_ids": [
+            "E-695229711483afd84c8798d6-3"
+          ],
+          "id": "C-4ab795febd3a49a7",
+          "product": "Milvus",
+          "reason": "测试替身仅验证逐字证据对应，不是语义能力实测。",
+          "scope": {},
+          "status": "supported",
+          "text": "维护要求：【测试设定】Milvus的维护要求应根据用户条件进一步检查；不代表真实产品事实。",
+          "value": "【测试设定】Milvus的维护要求应根据用户条件进一步检查；不代表真实产品事实。"
+        },
+        {
+          "attribute": "扩展方式",
+          "conflicting_ids": [],
+          "dimension": "扩展方式",
+          "evidence_ids": [
+            "E-695229711483afd84c8798d6-4"
+          ],
+          "id": "C-b51ca76a8c5149d1",
+          "product": "Milvus",
+          "reason": "测试替身仅验证逐字证据对应，不是语义能力实测。",
+          "scope": {},
+          "status": "supported",
+          "text": "扩展方式：【测试设定】Milvus的扩展方式应根据用户条件进一步检查；不代表真实产品事实。",
+          "value": "【测试设定】Milvus的扩展方式应根据用户条件进一步检查；不代表真实产品事实。"
+        }
+      ],
+      "created_at": "2026-10-14T08:47:37.948135+00:00",
+      "error": null,
+      "evidence_ids": [
+        "E-0c0045f7cf24b6bedd5760f9-0",
+        "E-0c0045f7cf24b6bedd5760f9-1",
+        "E-0c0045f7cf24b6bedd5760f9-2",
+        "E-0c0045f7cf24b6bedd5760f9-3",
+        "E-0c0045f7cf24b6bedd5760f9-4",
+        "E-695229711483afd84c8798d6-0",
+        "E-695229711483afd84c8798d6-1",
+        "E-695229711483afd84c8798d6-2",
+        "E-695229711483afd84c8798d6-3",
+        "E-695229711483afd84c8798d6-4",
+        "E-b608974dfb8b598580ebdb7e-0",
+        "E-b608974dfb8b598580ebdb7e-1",
+        "E-b608974dfb8b598580ebdb7e-2",
+        "E-b608974dfb8b598580ebdb7e-3",
+        "E-b608974dfb8b598580ebdb7e-4"
+      ],
+      "id": "315639d620a84905a695b86bfd2a7bb5",
+      "input": {
+        "allow_unknown": true,
+        "custom_catalog": null,
+        "force_refresh": false,
+        "group": "vector_databases",
+        "query": "为个人知识库比较三款向量数据库，优先维护成本。\n用户修改条件：我已经使用PostgreSQL",
+        "requested_versions": {},
+        "session_id": "397cfa87ddb048409244d479c2258126"
+      },
+      "model_mode": "fixture",
+      "repair_round": 0,
+      "report_id": "52b03fe656d145538b706d263a94b183",
+      "report_version": 2,
+      "research_steps": {},
+      "session_id": "397cfa87ddb048409244d479c2258126",
+      "snapshot_ids": [
+        "0c0045f7cf24b6bedd5760f9",
+        "695229711483afd84c8798d6",
+        "b608974dfb8b598580ebdb7e"
+      ],
+      "status": "completed",
+      "summary_only_ids": [],
+      "trace": [
+        {
+          "operation": "clarify",
+          "questions": [],
+          "status": "working"
+        },
+        {
+          "operation": "research_round",
+          "round": 0,
+          "status": "working",
+          "targets": {}
+        },
+        {
+          "elapsed_ms": 159.26,
+          "operation": "verify",
+          "product": "all",
+          "status": "ok",
+          "supported": 15,
+          "unresolved": 0
+        }
+      ],
+      "updated_at": "2026-10-14T08:47:38.329797+00:00",
+      "usage": {
+        "completion_tokens": 0,
+        "cost_note": "单价只适用于配置的主模型；切换或供应商返回不同模型名时费用未知。失败调用是否计费以账单为准；币种不混加。",
+        "exhausted_models": [],
+        "failed_calls": 0,
+        "llm_cost_cny": null,
+        "model_attempts": [],
+        "model_calls": 6,
+        "model_fallbacks": [],
+        "models": {},
+        "prompt_tokens": 0,
+        "read_calls": 0,
+        "reused_snapshots": 3,
+        "search_calls": 0,
+        "search_cost_usd": null,
+        "token_measurement": "not_applicable_fixture"
+      },
+      "usage_counters": {
+        "completion_tokens": 0,
+        "exhausted_models": [],
+        "failed_calls": 0,
+        "model_attempts": [],
+        "model_calls": 6,
+        "model_fallbacks": [],
+        "models": {},
+        "prompt_tokens": 0,
+        "read_calls": 0,
+        "reused_snapshots": 3,
+        "search_calls": 0
+      }
+    }
+  ],
+  "reports": [
+    {
+      "brief": {
+        "constraints": {
+          "部署要求": "本地或自托管"
+        },
+        "dimensions": [
+          "部署方式",
+          "已有技术栈",
+          "检索与过滤",
+          "维护要求",
+          "扩展方式"
+        ],
+        "group": "vector_databases",
+        "preferences": [
+          "维护成本"
+        ],
+        "products": [
+          "pgvector",
+          "Qdrant",
+          "Milvus"
+        ],
+        "questions": [],
+        "requested_versions": {},
+        "unknowns": [
+          "已有技术栈（例如是否使用PostgreSQL）"
+        ]
+      },
+      "changes": {
+        "added_facts": [],
+        "condition_changes": {},
+        "markdown_diff": "",
+        "removed_facts": [],
+        "reused_snapshots": 0
+      },
+      "claims": [
+        {
+          "attribute": "部署方式",
+          "conflicting_ids": [],
+          "dimension": "部署方式",
+          "evidence_ids": [
+            "E-b608974dfb8b598580ebdb7e-0"
+          ],
+          "id": "C-1f1ffa1d36f348da",
+          "product": "pgvector",
+          "reason": "测试替身仅验证逐字证据对应，不是语义能力实测。",
+          "scope": {},
+          "status": "supported",
+          "text": "部署方式：【测试设定】pgvector的部署方式应根据用户条件进一步检查；不代表真实产品事实。",
+          "value": "【测试设定】pgvector的部署方式应根据用户条件进一步检查；不代表真实产品事实。"
+        },
+        {
+          "attribute": "已有技术栈",
+          "conflicting_ids": [],
+          "dimension": "已有技术栈",
+          "evidence_ids": [
+            "E-b608974dfb8b598580ebdb7e-1"
+          ],
+          "id": "C-87212e065ddd4a47",
+          "product": "pgvector",
+          "reason": "测试替身仅验证逐字证据对应，不是语义能力实测。",
+          "scope": {},
+          "status": "supported",
+          "text": "已有技术栈：【测试设定】pgvector的已有技术栈应根据用户条件进一步检查；不代表真实产品事实。",
+          "value": "【测试设定】pgvector的已有技术栈应根据用户条件进一步检查；不代表真实产品事实。"
+        },
+        {
+          "attribute": "检索与过滤",
+          "conflicting_ids": [],
+          "dimension": "检索与过滤",
+          "evidence_ids": [
+            "E-b608974dfb8b598580ebdb7e-2"
+          ],
+          "id": "C-13210f0397904cf9",
+          "product": "pgvector",
+          "reason": "测试替身仅验证逐字证据对应，不是语义能力实测。",
+          "scope": {},
+          "status": "supported",
+          "text": "检索与过滤：【测试设定】pgvector的检索与过滤应根据用户条件进一步检查；不代表真实产品事实。",
+          "value": "【测试设定】pgvector的检索与过滤应根据用户条件进一步检查；不代表真实产品事实。"
+        },
+        {
+          "attribute": "维护要求",
+          "conflicting_ids": [],
+          "dimension": "维护要求",
+          "evidence_ids": [
+            "E-b608974dfb8b598580ebdb7e-3"
+          ],
+          "id": "C-25ef7c20d5ee4c39",
+          "product": "pgvector",
+          "reason": "测试替身仅验证逐字证据对应，不是语义能力实测。",
+          "scope": {},
+          "status": "supported",
+          "text": "维护要求：【测试设定】pgvector的维护要求应根据用户条件进一步检查；不代表真实产品事实。",
+          "value": "【测试设定】pgvector的维护要求应根据用户条件进一步检查；不代表真实产品事实。"
+        },
+        {
+          "attribute": "扩展方式",
+          "conflicting_ids": [],
+          "dimension": "扩展方式",
+          "evidence_ids": [
+            "E-b608974dfb8b598580ebdb7e-4"
+          ],
+          "id": "C-ff91c7cb2ac942f5",
+          "product": "pgvector",
+          "reason": "测试替身仅验证逐字证据对应，不是语义能力实测。",
+          "scope": {},
+          "status": "supported",
+          "text": "扩展方式：【测试设定】pgvector的扩展方式应根据用户条件进一步检查；不代表真实产品事实。",
+          "value": "【测试设定】pgvector的扩展方式应根据用户条件进一步检查；不代表真实产品事实。"
+        },
+        {
+          "attribute": "部署方式",
+          "conflicting_ids": [],
+          "dimension": "部署方式",
+          "evidence_ids": [
+            "E-0c0045f7cf24b6bedd5760f9-0"
+          ],
+          "id": "C-f9a2e39b5f474887",
+          "product": "Qdrant",
+          "reason": "测试替身仅验证逐字证据对应，不是语义能力实测。",
+          "scope": {},
+          "status": "supported",
+          "text": "部署方式：【测试设定】Qdrant的部署方式应根据用户条件进一步检查；不代表真实产品事实。",
+          "value": "【测试设定】Qdrant的部署方式应根据用户条件进一步检查；不代表真实产品事实。"
+        },
+        {
+          "attribute": "已有技术栈",
+          "conflicting_ids": [],
+          "dimension": "已有技术栈",
+          "evidence_ids": [
+            "E-0c0045f7cf24b6bedd5760f9-1"
+          ],
+          "id": "C-5a5dae796a014361",
+          "product": "Qdrant",
+          "reason": "测试替身仅验证逐字证据对应，不是语义能力实测。",
+          "scope": {},
+          "status": "supported",
+          "text": "已有技术栈：【测试设定】Qdrant的已有技术栈应根据用户条件进一步检查；不代表真实产品事实。",
+          "value": "【测试设定】Qdrant的已有技术栈应根据用户条件进一步检查；不代表真实产品事实。"
+        },
+        {
+          "attribute": "检索与过滤",
+          "conflicting_ids": [],
+          "dimension": "检索与过滤",
+          "evidence_ids": [
+            "E-0c0045f7cf24b6bedd5760f9-2"
+          ],
+          "id": "C-18eec27a5aa14278",
+          "product": "Qdrant",
+          "reason": "测试替身仅验证逐字证据对应，不是语义能力实测。",
+          "scope": {},
+          "status": "supported",
+          "text": "检索与过滤：【测试设定】Qdrant的检索与过滤应根据用户条件进一步检查；不代表真实产品事实。",
+          "value": "【测试设定】Qdrant的检索与过滤应根据用户条件进一步检查；不代表真实产品事实。"
+        },
+        {
+          "attribute": "维护要求",
+          "conflicting_ids": [],
+          "dimension": "维护要求",
+          "evidence_ids": [
+            "E-0c0045f7cf24b6bedd5760f9-3"
+          ],
+          "id": "C-43090a57cb374342",
+          "product": "Qdrant",
+          "reason": "测试替身仅验证逐字证据对应，不是语义能力实测。",
+          "scope": {},
+          "status": "supported",
+          "text": "维护要求：【测试设定】Qdrant的维护要求应根据用户条件进一步检查；不代表真实产品事实。",
+          "value": "【测试设定】Qdrant的维护要求应根据用户条件进一步检查；不代表真实产品事实。"
+        },
+        {
+          "attribute": "扩展方式",
+          "conflicting_ids": [],
+          "dimension": "扩展方式",
+          "evidence_ids": [
+            "E-0c0045f7cf24b6bedd5760f9-4"
+          ],
+          "id": "C-6a6358af8d6346c1",
+          "product": "Qdrant",
+          "reason": "测试替身仅验证逐字证据对应，不是语义能力实测。",
+          "scope": {},
+          "status": "supported",
+          "text": "扩展方式：【测试设定】Qdrant的扩展方式应根据用户条件进一步检查；不代表真实产品事实。",
+          "value": "【测试设定】Qdrant的扩展方式应根据用户条件进一步检查；不代表真实产品事实。"
+        },
+        {
+          "attribute": "部署方式",
+          "conflicting_ids": [],
+          "dimension": "部署方式",
+          "evidence_ids": [
+            "E-695229711483afd84c8798d6-0"
+          ],
+          "id": "C-fd6f0d4cfd204245",
+          "product": "Milvus",
+          "reason": "测试替身仅验证逐字证据对应，不是语义能力实测。",
+          "scope": {},
+          "status": "supported",
+          "text": "部署方式：【测试设定】Milvus的部署方式应根据用户条件进一步检查；不代表真实产品事实。",
+          "value": "【测试设定】Milvus的部署方式应根据用户条件进一步检查；不代表真实产品事实。"
+        },
+        {
+          "attribute": "已有技术栈",
+          "conflicting_ids": [],
+          "dimension": "已有技术栈",
+          "evidence_ids": [
+            "E-695229711483afd84c8798d6-1"
+          ],
+          "id": "C-93a0d965cb8d4918",
+          "product": "Milvus",
+          "reason": "测试替身仅验证逐字证据对应，不是语义能力实测。",
+          "scope": {},
+          "status": "supported",
+          "text": "已有技术栈：【测试设定】Milvus的已有技术栈应根据用户条件进一步检查；不代表真实产品事实。",
+          "value": "【测试设定】Milvus的已有技术栈应根据用户条件进一步检查；不代表真实产品事实。"
+        },
+        {
+          "attribute": "检索与过滤",
+          "conflicting_ids": [],
+          "dimension": "检索与过滤",
+          "evidence_ids": [
+            "E-695229711483afd84c8798d6-2"
+          ],
+          "id": "C-6e345a247ffc4dfc",
+          "product": "Milvus",
+          "reason": "测试替身仅验证逐字证据对应，不是语义能力实测。",
+          "scope": {},
+          "status": "supported",
+          "text": "检索与过滤：【测试设定】Milvus的检索与过滤应根据用户条件进一步检查；不代表真实产品事实。",
+          "value": "【测试设定】Milvus的检索与过滤应根据用户条件进一步检查；不代表真实产品事实。"
+        },
+        {
+          "attribute": "维护要求",
+          "conflicting_ids": [],
+          "dimension": "维护要求",
+          "evidence_ids": [
+            "E-695229711483afd84c8798d6-3"
+          ],
+          "id": "C-4ab795febd3a49a7",
+          "product": "Milvus",
+          "reason": "测试替身仅验证逐字证据对应，不是语义能力实测。",
+          "scope": {},
+          "status": "supported",
+          "text": "维护要求：【测试设定】Milvus的维护要求应根据用户条件进一步检查；不代表真实产品事实。",
+          "value": "【测试设定】Milvus的维护要求应根据用户条件进一步检查；不代表真实产品事实。"
+        },
+        {
+          "attribute": "扩展方式",
+          "conflicting_ids": [],
+          "dimension": "扩展方式",
+          "evidence_ids": [
+            "E-695229711483afd84c8798d6-4"
+          ],
+          "id": "C-b51ca76a8c5149d1",
+          "product": "Milvus",
+          "reason": "测试替身仅验证逐字证据对应，不是语义能力实测。",
+          "scope": {},
+          "status": "supported",
+          "text": "扩展方式：【测试设定】Milvus的扩展方式应根据用户条件进一步检查；不代表真实产品事实。",
+          "value": "【测试设定】Milvus的扩展方式应根据用户条件进一步检查；不代表真实产品事实。"
+        }
+      ],
+      "created_at": "2026-10-14T08:47:37.686301+00:00",
+      "judgments": [
+        {
+          "claim_ids": [
+            "C-1f1ffa1d36f348da",
+            "C-87212e065ddd4a47"
+          ],
+          "condition_keys": [
+            "部署要求"
+          ],
+          "product": "pgvector",
+          "reasoning": "【测试推理】根据当前条件 {\"部署要求\": \"本地或自托管\"} 重新检查适配性；此处不提供真实产品排名或推荐。"
+        },
+        {
+          "claim_ids": [
+            "C-f9a2e39b5f474887",
+            "C-5a5dae796a014361"
+          ],
+          "condition_keys": [
+            "部署要求"
+          ],
+          "product": "Qdrant",
+          "reasoning": "【测试推理】根据当前条件 {\"部署要求\": \"本地或自托管\"} 重新检查适配性；此处不提供真实产品排名或推荐。"
+        },
+        {
+          "claim_ids": [
+            "C-fd6f0d4cfd204245",
+            "C-93a0d965cb8d4918"
+          ],
+          "condition_keys": [
+            "部署要求"
+          ],
+          "product": "Milvus",
+          "reasoning": "【测试推理】根据当前条件 {\"部署要求\": \"本地或自托管\"} 重新检查适配性；此处不提供真实产品排名或推荐。"
+        }
+      ],
+      "markdown": "# 技术选型研究报告 · 第 1 版\n\n**确定性测试替身：以下资料为合成内容，不构成真实产品建议。**\n\n## 用户条件\n\n- 部署要求：本地或自托管\n- 偏好：维护成本\n- 尚未明确：已有技术栈（例如是否使用PostgreSQL）\n\n## 来源事实对比\n\n| 比较维度 | pgvector | Qdrant | Milvus |\n|---|---|---|---|\n| 部署方式 | 部署方式：【测试设定】pgvector的部署方式应根据用户条件进一步检查；不代表真实产品事实。 [C-1f1ffa1d36f348da] | 部署方式：【测试设定】Qdrant的部署方式应根据用户条件进一步检查；不代表真实产品事实。 [C-f9a2e39b5f474887] | 部署方式：【测试设定】Milvus的部署方式应根据用户条件进一步检查；不代表真实产品事实。 [C-fd6f0d4cfd204245] |\n| 已有技术栈 | 已有技术栈：【测试设定】pgvector的已有技术栈应根据用户条件进一步检查；不代表真实产品事实。 [C-87212e065ddd4a47] | 已有技术栈：【测试设定】Qdrant的已有技术栈应根据用户条件进一步检查；不代表真实产品事实。 [C-5a5dae796a014361] | 已有技术栈：【测试设定】Milvus的已有技术栈应根据用户条件进一步检查；不代表真实产品事实。 [C-93a0d965cb8d4918] |\n| 检索与过滤 | 检索与过滤：【测试设定】pgvector的检索与过滤应根据用户条件进一步检查；不代表真实产品事实。 [C-13210f0397904cf9] | 检索与过滤：【测试设定】Qdrant的检索与过滤应根据用户条件进一步检查；不代表真实产品事实。 [C-18eec27a5aa14278] | 检索与过滤：【测试设定】Milvus的检索与过滤应根据用户条件进一步检查；不代表真实产品事实。 [C-6e345a247ffc4dfc] |\n| 维护要求 | 维护要求：【测试设定】pgvector的维护要求应根据用户条件进一步检查；不代表真实产品事实。 [C-25ef7c20d5ee4c39] | 维护要求：【测试设定】Qdrant的维护要求应根据用户条件进一步检查；不代表真实产品事实。 [C-43090a57cb374342] | 维护要求：【测试设定】Milvus的维护要求应根据用户条件进一步检查；不代表真实产品事实。 [C-4ab795febd3a49a7] |\n| 扩展方式 | 扩展方式：【测试设定】pgvector的扩展方式应根据用户条件进一步检查；不代表真实产品事实。 [C-ff91c7cb2ac942f5] | 扩展方式：【测试设定】Qdrant的扩展方式应根据用户条件进一步检查；不代表真实产品事实。 [C-6a6358af8d6346c1] | 扩展方式：【测试设定】Milvus的扩展方式应根据用户条件进一步检查；不代表真实产品事实。 [C-b51ca76a8c5149d1] |\n\n## 基于条件的判断（与来源事实分开）\n\n- **pgvector**：【测试推理】根据当前条件 {\"部署要求\": \"本地或自托管\"} 重新检查适配性；此处不提供真实产品排名或推荐。 [C-1f1ffa1d36f348da] [C-87212e065ddd4a47]\n- **Qdrant**：【测试推理】根据当前条件 {\"部署要求\": \"本地或自托管\"} 重新检查适配性；此处不提供真实产品排名或推荐。 [C-f9a2e39b5f474887] [C-5a5dae796a014361]\n- **Milvus**：【测试推理】根据当前条件 {\"部署要求\": \"本地或自托管\"} 重新检查适配性；此处不提供真实产品排名或推荐。 [C-fd6f0d4cfd204245] [C-93a0d965cb8d4918]\n\n## 冲突与待确认项\n\n本轮结构化核验未发现未解决项；这不代表已完成独立事实审计。\n\n## 结论与原文证据\n\n- [C-1f1ffa1d36f348da] supported：[E-b608974dfb8b598580ebdb7e-0](/v1/evidence/E-b608974dfb8b598580ebdb7e-0)\n- [C-87212e065ddd4a47] supported：[E-b608974dfb8b598580ebdb7e-1](/v1/evidence/E-b608974dfb8b598580ebdb7e-1)\n- [C-13210f0397904cf9] supported：[E-b608974dfb8b598580ebdb7e-2](/v1/evidence/E-b608974dfb8b598580ebdb7e-2)\n- [C-25ef7c20d5ee4c39] supported：[E-b608974dfb8b598580ebdb7e-3](/v1/evidence/E-b608974dfb8b598580ebdb7e-3)\n- [C-ff91c7cb2ac942f5] supported：[E-b608974dfb8b598580ebdb7e-4](/v1/evidence/E-b608974dfb8b598580ebdb7e-4)\n- [C-f9a2e39b5f474887] supported：[E-0c0045f7cf24b6bedd5760f9-0](/v1/evidence/E-0c0045f7cf24b6bedd5760f9-0)\n- [C-5a5dae796a014361] supported：[E-0c0045f7cf24b6bedd5760f9-1](/v1/evidence/E-0c0045f7cf24b6bedd5760f9-1)\n- [C-18eec27a5aa14278] supported：[E-0c0045f7cf24b6bedd5760f9-2](/v1/evidence/E-0c0045f7cf24b6bedd5760f9-2)\n- [C-43090a57cb374342] supported：[E-0c0045f7cf24b6bedd5760f9-3](/v1/evidence/E-0c0045f7cf24b6bedd5760f9-3)\n- [C-6a6358af8d6346c1] supported：[E-0c0045f7cf24b6bedd5760f9-4](/v1/evidence/E-0c0045f7cf24b6bedd5760f9-4)\n- [C-fd6f0d4cfd204245] supported：[E-695229711483afd84c8798d6-0](/v1/evidence/E-695229711483afd84c8798d6-0)\n- [C-93a0d965cb8d4918] supported：[E-695229711483afd84c8798d6-1](/v1/evidence/E-695229711483afd84c8798d6-1)\n- [C-6e345a247ffc4dfc] supported：[E-695229711483afd84c8798d6-2](/v1/evidence/E-695229711483afd84c8798d6-2)\n- [C-4ab795febd3a49a7] supported：[E-695229711483afd84c8798d6-3](/v1/evidence/E-695229711483afd84c8798d6-3)\n- [C-b51ca76a8c5149d1] supported：[E-695229711483afd84c8798d6-4](/v1/evidence/E-695229711483afd84c8798d6-4)\n\n## 来源与时间\n\n- 合成测试文档：Qdrant · 合成测试资料 · 已读取原文 · 抓取 2026-10-14T08:47:37.451842+00:00 · 发布 未知 · 文档版本 fixture-1 · https://fixtures.example.org/Qdrant/documentation\n- 合成测试文档：Milvus · 合成测试资料 · 已读取原文 · 抓取 2026-10-14T08:47:37.504669+00:00 · 发布 未知 · 文档版本 fixture-1 · https://fixtures.example.org/Milvus/documentation\n- 合成测试文档：pgvector · 合成测试资料 · 已读取原文 · 抓取 2026-10-14T08:47:37.399988+00:00 · 发布 未知 · 文档版本 fixture-1 · https://fixtures.example.org/pgvector/documentation",
+      "model_mode": "fixture",
+      "previous_version": null,
+      "report_id": "52b03fe656d145538b706d263a94b183",
+      "session_id": "397cfa87ddb048409244d479c2258126",
+      "sources": [
+        {
+          "content_hash": "7d375e02ac787869cbc683373ecb0d2886aeccdd8626445cd3fb0f5541cd9fb7",
+          "content_path": "7d375e02ac787869cbc683373ecb0d2886aeccdd8626445cd3fb0f5541cd9fb7.txt",
+          "document_version": "fixture-1",
+          "duplicate_of": null,
+          "id": "0c0045f7cf24b6bedd5760f9",
+          "model_mode": "fixture",
+          "original_url": null,
+          "product": "Qdrant",
+          "published_at": null,
+          "requested_version": null,
+          "retrieved_at": "2026-10-14T08:47:37.451842+00:00",
+          "sensitive": false,
+          "session_id": "397cfa87ddb048409244d479c2258126",
+          "source_type": "fixture",
+          "status": "fulltext",
+          "summary": "",
+          "title": "合成测试文档：Qdrant",
+          "url": "https://fixtures.example.org/Qdrant/documentation"
+        },
+        {
+          "content_hash": "543e8a9d0e2518141416a0e7afccca019568ff8a15bbd587e35518f492fcb0aa",
+          "content_path": "543e8a9d0e2518141416a0e7afccca019568ff8a15bbd587e35518f492fcb0aa.txt",
+          "document_version": "fixture-1",
+          "duplicate_of": null,
+          "id": "695229711483afd84c8798d6",
+          "model_mode": "fixture",
+          "original_url": null,
+          "product": "Milvus",
+          "published_at": null,
+          "requested_version": null,
+          "retrieved_at": "2026-10-14T08:47:37.504669+00:00",
+          "sensitive": false,
+          "session_id": "397cfa87ddb048409244d479c2258126",
+          "source_type": "fixture",
+          "status": "fulltext",
+          "summary": "",
+          "title": "合成测试文档：Milvus",
+          "url": "https://fixtures.example.org/Milvus/documentation"
+        },
+        {
+          "content_hash": "fc07ee6941c50e8c50e5c4f3fae799efdb111ca289a586c31af35f0a162fd81b",
+          "content_path": "fc07ee6941c50e8c50e5c4f3fae799efdb111ca289a586c31af35f0a162fd81b.txt",
+          "document_version": "fixture-1",
+          "duplicate_of": null,
+          "id": "b608974dfb8b598580ebdb7e",
+          "model_mode": "fixture",
+          "original_url": null,
+          "product": "pgvector",
+          "published_at": null,
+          "requested_version": null,
+          "retrieved_at": "2026-10-14T08:47:37.399988+00:00",
+          "sensitive": false,
+          "session_id": "397cfa87ddb048409244d479c2258126",
+          "source_type": "fixture",
+          "status": "fulltext",
+          "summary": "",
+          "title": "合成测试文档：pgvector",
+          "url": "https://fixtures.example.org/pgvector/documentation"
+        }
+      ],
+      "task_id": "7ecdb93564834d318fc5354e2980c7a5",
+      "unresolved": [],
+      "usage": {
+        "completion_tokens": 0,
+        "cost_note": "单价只适用于配置的主模型；切换或供应商返回不同模型名时费用未知。失败调用是否计费以账单为准；币种不混加。",
+        "exhausted_models": [],
+        "failed_calls": 0,
+        "llm_cost_cny": null,
+        "model_attempts": [],
+        "model_calls": 16,
+        "model_fallbacks": [],
+        "models": {},
+        "prompt_tokens": 0,
+        "read_calls": 3,
+        "reused_snapshots": 0,
+        "search_calls": 3,
+        "search_cost_usd": null,
+        "token_measurement": "not_applicable_fixture"
+      },
+      "version": 1
+    },
+    {
+      "brief": {
+        "constraints": {
+          "已有技术栈": "PostgreSQL",
+          "部署要求": "本地或自托管"
+        },
+        "dimensions": [
+          "部署方式",
+          "已有技术栈",
+          "检索与过滤",
+          "维护要求",
+          "扩展方式"
+        ],
+        "group": "vector_databases",
+        "preferences": [
+          "维护成本"
+        ],
+        "products": [
+          "pgvector",
+          "Qdrant",
+          "Milvus"
+        ],
+        "questions": [],
+        "requested_versions": {},
+        "unknowns": []
+      },
+      "changes": {
+        "added_facts": [],
+        "condition_changes": {
+          "已有技术栈": {
+            "after": "PostgreSQL",
+            "before": null
+          }
+        },
+        "judgments_changed": true,
+        "markdown_diff": "--- version-1\n+++ version-2\n@@ -1,12 +1,12 @@\n-# 技术选型研究报告 · 第 1 版\n+# 技术选型研究报告 · 第 2 版\n \n **确定性测试替身：以下资料为合成内容，不构成真实产品建议。**\n \n ## 用户条件\n \n - 部署要求：本地或自托管\n+- 已有技术栈：PostgreSQL\n - 偏好：维护成本\n-- 尚未明确：已有技术栈（例如是否使用PostgreSQL）\n \n ## 来源事实对比\n \n@@ -20,9 +20,9 @@\n \n ## 基于条件的判断（与来源事实分开）\n \n-- **pgvector**：【测试推理】根据当前条件 {\"部署要求\": \"本地或自托管\"} 重新检查适配性；此处不提供真实产品排名或推荐。 [C-1f1ffa1d36f348da] [C-87212e065ddd4a47]\n-- **Qdrant**：【测试推理】根据当前条件 {\"部署要求\": \"本地或自托管\"} 重新检查适配性；此处不提供真实产品排名或推荐。 [C-f9a2e39b5f474887] [C-5a5dae796a014361]\n-- **Milvus**：【测试推理】根据当前条件 {\"部署要求\": \"本地或自托管\"} 重新检查适配性；此处不提供真实产品排名或推荐。 [C-fd6f0d4cfd204245] [C-93a0d965cb8d4918]\n+- **pgvector**：【测试推理】根据当前条件 {\"部署要求\": \"本地或自托管\", \"已有技术栈\": \"PostgreSQL\"} 重新检查适配性；此处不提供真实产品排名或推荐。 [C-1f1ffa1d36f348da] [C-87212e065ddd4a47]\n+- **Qdrant**：【测试推理】根据当前条件 {\"部署要求\": \"本地或自托管\", \"已有技术栈\": \"PostgreSQL\"} 重新检查适配性；此处不提供真实产品排名或推荐。 [C-f9a2e39b5f474887] [C-5a5dae796a014361]\n+- **Milvus**：【测试推理】根据当前条件 {\"部署要求\": \"本地或自托管\", \"已有技术栈\": \"PostgreSQL\"} 重新检查适配性；此处不提供真实产品排名或推荐。 [C-fd6f0d4cfd204245] [C-93a0d965cb8d4918]\n \n ## 冲突与待确认项\n ",
+        "removed_facts": [],
+        "reused_snapshots": 3
+      },
+      "claims": [
+        {
+          "attribute": "部署方式",
+          "conflicting_ids": [],
+          "dimension": "部署方式",
+          "evidence_ids": [
+            "E-b608974dfb8b598580ebdb7e-0"
+          ],
+          "id": "C-1f1ffa1d36f348da",
+          "product": "pgvector",
+          "reason": "测试替身仅验证逐字证据对应，不是语义能力实测。",
+          "scope": {},
+          "status": "supported",
+          "text": "部署方式：【测试设定】pgvector的部署方式应根据用户条件进一步检查；不代表真实产品事实。",
+          "value": "【测试设定】pgvector的部署方式应根据用户条件进一步检查；不代表真实产品事实。"
+        },
+        {
+          "attribute": "已有技术栈",
+          "conflicting_ids": [],
+          "dimension": "已有技术栈",
+          "evidence_ids": [
+            "E-b608974dfb8b598580ebdb7e-1"
+          ],
+          "id": "C-87212e065ddd4a47",
+          "product": "pgvector",
+          "reason": "测试替身仅验证逐字证据对应，不是语义能力实测。",
+          "scope": {},
+          "status": "supported",
+          "text": "已有技术栈：【测试设定】pgvector的已有技术栈应根据用户条件进一步检查；不代表真实产品事实。",
+          "value": "【测试设定】pgvector的已有技术栈应根据用户条件进一步检查；不代表真实产品事实。"
+        },
+        {
+          "attribute": "检索与过滤",
+          "conflicting_ids": [],
+          "dimension": "检索与过滤",
+          "evidence_ids": [
+            "E-b608974dfb8b598580ebdb7e-2"
+          ],
+          "id": "C-13210f0397904cf9",
+          "product": "pgvector",
+          "reason": "测试替身仅验证逐字证据对应，不是语义能力实测。",
+          "scope": {},
+          "status": "supported",
+          "text": "检索与过滤：【测试设定】pgvector的检索与过滤应根据用户条件进一步检查；不代表真实产品事实。",
+          "value": "【测试设定】pgvector的检索与过滤应根据用户条件进一步检查；不代表真实产品事实。"
+        },
+        {
+          "attribute": "维护要求",
+          "conflicting_ids": [],
+          "dimension": "维护要求",
+          "evidence_ids": [
+            "E-b608974dfb8b598580ebdb7e-3"
+          ],
+          "id": "C-25ef7c20d5ee4c39",
+          "product": "pgvector",
+          "reason": "测试替身仅验证逐字证据对应，不是语义能力实测。",
+          "scope": {},
+          "status": "supported",
+          "text": "维护要求：【测试设定】pgvector的维护要求应根据用户条件进一步检查；不代表真实产品事实。",
+          "value": "【测试设定】pgvector的维护要求应根据用户条件进一步检查；不代表真实产品事实。"
+        },
+        {
+          "attribute": "扩展方式",
+          "conflicting_ids": [],
+          "dimension": "扩展方式",
+          "evidence_ids": [
+            "E-b608974dfb8b598580ebdb7e-4"
+          ],
+          "id": "C-ff91c7cb2ac942f5",
+          "product": "pgvector",
+          "reason": "测试替身仅验证逐字证据对应，不是语义能力实测。",
+          "scope": {},
+          "status": "supported",
+          "text": "扩展方式：【测试设定】pgvector的扩展方式应根据用户条件进一步检查；不代表真实产品事实。",
+          "value": "【测试设定】pgvector的扩展方式应根据用户条件进一步检查；不代表真实产品事实。"
+        },
+        {
+          "attribute": "部署方式",
+          "conflicting_ids": [],
+          "dimension": "部署方式",
+          "evidence_ids": [
+            "E-0c0045f7cf24b6bedd5760f9-0"
+          ],
+          "id": "C-f9a2e39b5f474887",
+          "product": "Qdrant",
+          "reason": "测试替身仅验证逐字证据对应，不是语义能力实测。",
+          "scope": {},
+          "status": "supported",
+          "text": "部署方式：【测试设定】Qdrant的部署方式应根据用户条件进一步检查；不代表真实产品事实。",
+          "value": "【测试设定】Qdrant的部署方式应根据用户条件进一步检查；不代表真实产品事实。"
+        },
+        {
+          "attribute": "已有技术栈",
+          "conflicting_ids": [],
+          "dimension": "已有技术栈",
+          "evidence_ids": [
+            "E-0c0045f7cf24b6bedd5760f9-1"
+          ],
+          "id": "C-5a5dae796a014361",
+          "product": "Qdrant",
+          "reason": "测试替身仅验证逐字证据对应，不是语义能力实测。",
+          "scope": {},
+          "status": "supported",
+          "text": "已有技术栈：【测试设定】Qdrant的已有技术栈应根据用户条件进一步检查；不代表真实产品事实。",
+          "value": "【测试设定】Qdrant的已有技术栈应根据用户条件进一步检查；不代表真实产品事实。"
+        },
+        {
+          "attribute": "检索与过滤",
+          "conflicting_ids": [],
+          "dimension": "检索与过滤",
+          "evidence_ids": [
+            "E-0c0045f7cf24b6bedd5760f9-2"
+          ],
+          "id": "C-18eec27a5aa14278",
+          "product": "Qdrant",
+          "reason": "测试替身仅验证逐字证据对应，不是语义能力实测。",
+          "scope": {},
+          "status": "supported",
+          "text": "检索与过滤：【测试设定】Qdrant的检索与过滤应根据用户条件进一步检查；不代表真实产品事实。",
+          "value": "【测试设定】Qdrant的检索与过滤应根据用户条件进一步检查；不代表真实产品事实。"
+        },
+        {
+          "attribute": "维护要求",
+          "conflicting_ids": [],
+          "dimension": "维护要求",
+          "evidence_ids": [
+            "E-0c0045f7cf24b6bedd5760f9-3"
+          ],
+          "id": "C-43090a57cb374342",
+          "product": "Qdrant",
+          "reason": "测试替身仅验证逐字证据对应，不是语义能力实测。",
+          "scope": {},
+          "status": "supported",
+          "text": "维护要求：【测试设定】Qdrant的维护要求应根据用户条件进一步检查；不代表真实产品事实。",
+          "value": "【测试设定】Qdrant的维护要求应根据用户条件进一步检查；不代表真实产品事实。"
+        },
+        {
+          "attribute": "扩展方式",
+          "conflicting_ids": [],
+          "dimension": "扩展方式",
+          "evidence_ids": [
+            "E-0c0045f7cf24b6bedd5760f9-4"
+          ],
+          "id": "C-6a6358af8d6346c1",
+          "product": "Qdrant",
+          "reason": "测试替身仅验证逐字证据对应，不是语义能力实测。",
+          "scope": {},
+          "status": "supported",
+          "text": "扩展方式：【测试设定】Qdrant的扩展方式应根据用户条件进一步检查；不代表真实产品事实。",
+          "value": "【测试设定】Qdrant的扩展方式应根据用户条件进一步检查；不代表真实产品事实。"
+        },
+        {
+          "attribute": "部署方式",
+          "conflicting_ids": [],
+          "dimension": "部署方式",
+          "evidence_ids": [
+            "E-695229711483afd84c8798d6-0"
+          ],
+          "id": "C-fd6f0d4cfd204245",
+          "product": "Milvus",
+          "reason": "测试替身仅验证逐字证据对应，不是语义能力实测。",
+          "scope": {},
+          "status": "supported",
+          "text": "部署方式：【测试设定】Milvus的部署方式应根据用户条件进一步检查；不代表真实产品事实。",
+          "value": "【测试设定】Milvus的部署方式应根据用户条件进一步检查；不代表真实产品事实。"
+        },
+        {
+          "attribute": "已有技术栈",
+          "conflicting_ids": [],
+          "dimension": "已有技术栈",
+          "evidence_ids": [
+            "E-695229711483afd84c8798d6-1"
+          ],
+          "id": "C-93a0d965cb8d4918",
+          "product": "Milvus",
+          "reason": "测试替身仅验证逐字证据对应，不是语义能力实测。",
+          "scope": {},
+          "status": "supported",
+          "text": "已有技术栈：【测试设定】Milvus的已有技术栈应根据用户条件进一步检查；不代表真实产品事实。",
+          "value": "【测试设定】Milvus的已有技术栈应根据用户条件进一步检查；不代表真实产品事实。"
+        },
+        {
+          "attribute": "检索与过滤",
+          "conflicting_ids": [],
+          "dimension": "检索与过滤",
+          "evidence_ids": [
+            "E-695229711483afd84c8798d6-2"
+          ],
+          "id": "C-6e345a247ffc4dfc",
+          "product": "Milvus",
+          "reason": "测试替身仅验证逐字证据对应，不是语义能力实测。",
+          "scope": {},
+          "status": "supported",
+          "text": "检索与过滤：【测试设定】Milvus的检索与过滤应根据用户条件进一步检查；不代表真实产品事实。",
+          "value": "【测试设定】Milvus的检索与过滤应根据用户条件进一步检查；不代表真实产品事实。"
+        },
+        {
+          "attribute": "维护要求",
+          "conflicting_ids": [],
+          "dimension": "维护要求",
+          "evidence_ids": [
+            "E-695229711483afd84c8798d6-3"
+          ],
+          "id": "C-4ab795febd3a49a7",
+          "product": "Milvus",
+          "reason": "测试替身仅验证逐字证据对应，不是语义能力实测。",
+          "scope": {},
+          "status": "supported",
+          "text": "维护要求：【测试设定】Milvus的维护要求应根据用户条件进一步检查；不代表真实产品事实。",
+          "value": "【测试设定】Milvus的维护要求应根据用户条件进一步检查；不代表真实产品事实。"
+        },
+        {
+          "attribute": "扩展方式",
+          "conflicting_ids": [],
+          "dimension": "扩展方式",
+          "evidence_ids": [
+            "E-695229711483afd84c8798d6-4"
+          ],
+          "id": "C-b51ca76a8c5149d1",
+          "product": "Milvus",
+          "reason": "测试替身仅验证逐字证据对应，不是语义能力实测。",
+          "scope": {},
+          "status": "supported",
+          "text": "扩展方式：【测试设定】Milvus的扩展方式应根据用户条件进一步检查；不代表真实产品事实。",
+          "value": "【测试设定】Milvus的扩展方式应根据用户条件进一步检查；不代表真实产品事实。"
+        }
+      ],
+      "created_at": "2026-10-14T08:47:38.323216+00:00",
+      "judgments": [
+        {
+          "claim_ids": [
+            "C-1f1ffa1d36f348da",
+            "C-87212e065ddd4a47"
+          ],
+          "condition_keys": [
+            "部署要求",
+            "已有技术栈"
+          ],
+          "product": "pgvector",
+          "reasoning": "【测试推理】根据当前条件 {\"部署要求\": \"本地或自托管\", \"已有技术栈\": \"PostgreSQL\"} 重新检查适配性；此处不提供真实产品排名或推荐。"
+        },
+        {
+          "claim_ids": [
+            "C-f9a2e39b5f474887",
+            "C-5a5dae796a014361"
+          ],
+          "condition_keys": [
+            "部署要求",
+            "已有技术栈"
+          ],
+          "product": "Qdrant",
+          "reasoning": "【测试推理】根据当前条件 {\"部署要求\": \"本地或自托管\", \"已有技术栈\": \"PostgreSQL\"} 重新检查适配性；此处不提供真实产品排名或推荐。"
+        },
+        {
+          "claim_ids": [
+            "C-fd6f0d4cfd204245",
+            "C-93a0d965cb8d4918"
+          ],
+          "condition_keys": [
+            "部署要求",
+            "已有技术栈"
+          ],
+          "product": "Milvus",
+          "reasoning": "【测试推理】根据当前条件 {\"部署要求\": \"本地或自托管\", \"已有技术栈\": \"PostgreSQL\"} 重新检查适配性；此处不提供真实产品排名或推荐。"
+        }
+      ],
+      "markdown": "# 技术选型研究报告 · 第 2 版\n\n**确定性测试替身：以下资料为合成内容，不构成真实产品建议。**\n\n## 用户条件\n\n- 部署要求：本地或自托管\n- 已有技术栈：PostgreSQL\n- 偏好：维护成本\n\n## 来源事实对比\n\n| 比较维度 | pgvector | Qdrant | Milvus |\n|---|---|---|---|\n| 部署方式 | 部署方式：【测试设定】pgvector的部署方式应根据用户条件进一步检查；不代表真实产品事实。 [C-1f1ffa1d36f348da] | 部署方式：【测试设定】Qdrant的部署方式应根据用户条件进一步检查；不代表真实产品事实。 [C-f9a2e39b5f474887] | 部署方式：【测试设定】Milvus的部署方式应根据用户条件进一步检查；不代表真实产品事实。 [C-fd6f0d4cfd204245] |\n| 已有技术栈 | 已有技术栈：【测试设定】pgvector的已有技术栈应根据用户条件进一步检查；不代表真实产品事实。 [C-87212e065ddd4a47] | 已有技术栈：【测试设定】Qdrant的已有技术栈应根据用户条件进一步检查；不代表真实产品事实。 [C-5a5dae796a014361] | 已有技术栈：【测试设定】Milvus的已有技术栈应根据用户条件进一步检查；不代表真实产品事实。 [C-93a0d965cb8d4918] |\n| 检索与过滤 | 检索与过滤：【测试设定】pgvector的检索与过滤应根据用户条件进一步检查；不代表真实产品事实。 [C-13210f0397904cf9] | 检索与过滤：【测试设定】Qdrant的检索与过滤应根据用户条件进一步检查；不代表真实产品事实。 [C-18eec27a5aa14278] | 检索与过滤：【测试设定】Milvus的检索与过滤应根据用户条件进一步检查；不代表真实产品事实。 [C-6e345a247ffc4dfc] |\n| 维护要求 | 维护要求：【测试设定】pgvector的维护要求应根据用户条件进一步检查；不代表真实产品事实。 [C-25ef7c20d5ee4c39] | 维护要求：【测试设定】Qdrant的维护要求应根据用户条件进一步检查；不代表真实产品事实。 [C-43090a57cb374342] | 维护要求：【测试设定】Milvus的维护要求应根据用户条件进一步检查；不代表真实产品事实。 [C-4ab795febd3a49a7] |\n| 扩展方式 | 扩展方式：【测试设定】pgvector的扩展方式应根据用户条件进一步检查；不代表真实产品事实。 [C-ff91c7cb2ac942f5] | 扩展方式：【测试设定】Qdrant的扩展方式应根据用户条件进一步检查；不代表真实产品事实。 [C-6a6358af8d6346c1] | 扩展方式：【测试设定】Milvus的扩展方式应根据用户条件进一步检查；不代表真实产品事实。 [C-b51ca76a8c5149d1] |\n\n## 基于条件的判断（与来源事实分开）\n\n- **pgvector**：【测试推理】根据当前条件 {\"部署要求\": \"本地或自托管\", \"已有技术栈\": \"PostgreSQL\"} 重新检查适配性；此处不提供真实产品排名或推荐。 [C-1f1ffa1d36f348da] [C-87212e065ddd4a47]\n- **Qdrant**：【测试推理】根据当前条件 {\"部署要求\": \"本地或自托管\", \"已有技术栈\": \"PostgreSQL\"} 重新检查适配性；此处不提供真实产品排名或推荐。 [C-f9a2e39b5f474887] [C-5a5dae796a014361]\n- **Milvus**：【测试推理】根据当前条件 {\"部署要求\": \"本地或自托管\", \"已有技术栈\": \"PostgreSQL\"} 重新检查适配性；此处不提供真实产品排名或推荐。 [C-fd6f0d4cfd204245] [C-93a0d965cb8d4918]\n\n## 冲突与待确认项\n\n本轮结构化核验未发现未解决项；这不代表已完成独立事实审计。\n\n## 结论与原文证据\n\n- [C-1f1ffa1d36f348da] supported：[E-b608974dfb8b598580ebdb7e-0](/v1/evidence/E-b608974dfb8b598580ebdb7e-0)\n- [C-87212e065ddd4a47] supported：[E-b608974dfb8b598580ebdb7e-1](/v1/evidence/E-b608974dfb8b598580ebdb7e-1)\n- [C-13210f0397904cf9] supported：[E-b608974dfb8b598580ebdb7e-2](/v1/evidence/E-b608974dfb8b598580ebdb7e-2)\n- [C-25ef7c20d5ee4c39] supported：[E-b608974dfb8b598580ebdb7e-3](/v1/evidence/E-b608974dfb8b598580ebdb7e-3)\n- [C-ff91c7cb2ac942f5] supported：[E-b608974dfb8b598580ebdb7e-4](/v1/evidence/E-b608974dfb8b598580ebdb7e-4)\n- [C-f9a2e39b5f474887] supported：[E-0c0045f7cf24b6bedd5760f9-0](/v1/evidence/E-0c0045f7cf24b6bedd5760f9-0)\n- [C-5a5dae796a014361] supported：[E-0c0045f7cf24b6bedd5760f9-1](/v1/evidence/E-0c0045f7cf24b6bedd5760f9-1)\n- [C-18eec27a5aa14278] supported：[E-0c0045f7cf24b6bedd5760f9-2](/v1/evidence/E-0c0045f7cf24b6bedd5760f9-2)\n- [C-43090a57cb374342] supported：[E-0c0045f7cf24b6bedd5760f9-3](/v1/evidence/E-0c0045f7cf24b6bedd5760f9-3)\n- [C-6a6358af8d6346c1] supported：[E-0c0045f7cf24b6bedd5760f9-4](/v1/evidence/E-0c0045f7cf24b6bedd5760f9-4)\n- [C-fd6f0d4cfd204245] supported：[E-695229711483afd84c8798d6-0](/v1/evidence/E-695229711483afd84c8798d6-0)\n- [C-93a0d965cb8d4918] supported：[E-695229711483afd84c8798d6-1](/v1/evidence/E-695229711483afd84c8798d6-1)\n- [C-6e345a247ffc4dfc] supported：[E-695229711483afd84c8798d6-2](/v1/evidence/E-695229711483afd84c8798d6-2)\n- [C-4ab795febd3a49a7] supported：[E-695229711483afd84c8798d6-3](/v1/evidence/E-695229711483afd84c8798d6-3)\n- [C-b51ca76a8c5149d1] supported：[E-695229711483afd84c8798d6-4](/v1/evidence/E-695229711483afd84c8798d6-4)\n\n## 来源与时间\n\n- 合成测试文档：Qdrant · 合成测试资料 · 已读取原文 · 抓取 2026-10-14T08:47:37.451842+00:00 · 发布 未知 · 文档版本 fixture-1 · https://fixtures.example.org/Qdrant/documentation\n- 合成测试文档：Milvus · 合成测试资料 · 已读取原文 · 抓取 2026-10-14T08:47:37.504669+00:00 · 发布 未知 · 文档版本 fixture-1 · https://fixtures.example.org/Milvus/documentation\n- 合成测试文档：pgvector · 合成测试资料 · 已读取原文 · 抓取 2026-10-14T08:47:37.399988+00:00 · 发布 未知 · 文档版本 fixture-1 · https://fixtures.example.org/pgvector/documentation",
+      "model_mode": "fixture",
+      "previous_version": 1,
+      "report_id": "52b03fe656d145538b706d263a94b183",
+      "session_id": "397cfa87ddb048409244d479c2258126",
+      "sources": [
+        {
+          "content_hash": "7d375e02ac787869cbc683373ecb0d2886aeccdd8626445cd3fb0f5541cd9fb7",
+          "content_path": "7d375e02ac787869cbc683373ecb0d2886aeccdd8626445cd3fb0f5541cd9fb7.txt",
+          "document_version": "fixture-1",
+          "duplicate_of": null,
+          "id": "0c0045f7cf24b6bedd5760f9",
+          "model_mode": "fixture",
+          "original_url": null,
+          "product": "Qdrant",
+          "published_at": null,
+          "requested_version": null,
+          "retrieved_at": "2026-10-14T08:47:37.451842+00:00",
+          "sensitive": false,
+          "session_id": "397cfa87ddb048409244d479c2258126",
+          "source_type": "fixture",
+          "status": "fulltext",
+          "summary": "",
+          "title": "合成测试文档：Qdrant",
+          "url": "https://fixtures.example.org/Qdrant/documentation"
+        },
+        {
+          "content_hash": "543e8a9d0e2518141416a0e7afccca019568ff8a15bbd587e35518f492fcb0aa",
+          "content_path": "543e8a9d0e2518141416a0e7afccca019568ff8a15bbd587e35518f492fcb0aa.txt",
+          "document_version": "fixture-1",
+          "duplicate_of": null,
+          "id": "695229711483afd84c8798d6",
+          "model_mode": "fixture",
+          "original_url": null,
+          "product": "Milvus",
+          "published_at": null,
+          "requested_version": null,
+          "retrieved_at": "2026-10-14T08:47:37.504669+00:00",
+          "sensitive": false,
+          "session_id": "397cfa87ddb048409244d479c2258126",
+          "source_type": "fixture",
+          "status": "fulltext",
+          "summary": "",
+          "title": "合成测试文档：Milvus",
+          "url": "https://fixtures.example.org/Milvus/documentation"
+        },
+        {
+          "content_hash": "fc07ee6941c50e8c50e5c4f3fae799efdb111ca289a586c31af35f0a162fd81b",
+          "content_path": "fc07ee6941c50e8c50e5c4f3fae799efdb111ca289a586c31af35f0a162fd81b.txt",
+          "document_version": "fixture-1",
+          "duplicate_of": null,
+          "id": "b608974dfb8b598580ebdb7e",
+          "model_mode": "fixture",
+          "original_url": null,
+          "product": "pgvector",
+          "published_at": null,
+          "requested_version": null,
+          "retrieved_at": "2026-10-14T08:47:37.399988+00:00",
+          "sensitive": false,
+          "session_id": "397cfa87ddb048409244d479c2258126",
+          "source_type": "fixture",
+          "status": "fulltext",
+          "summary": "",
+          "title": "合成测试文档：pgvector",
+          "url": "https://fixtures.example.org/pgvector/documentation"
+        }
+      ],
+      "task_id": "315639d620a84905a695b86bfd2a7bb5",
+      "unresolved": [],
+      "usage": {
+        "completion_tokens": 0,
+        "cost_note": "单价只适用于配置的主模型；切换或供应商返回不同模型名时费用未知。失败调用是否计费以账单为准；币种不混加。",
+        "exhausted_models": [],
+        "failed_calls": 0,
+        "llm_cost_cny": null,
+        "model_attempts": [],
+        "model_calls": 6,
+        "model_fallbacks": [],
+        "models": {},
+        "prompt_tokens": 0,
+        "read_calls": 0,
+        "reused_snapshots": 3,
+        "search_calls": 0,
+        "search_cost_usd": null,
+        "token_measurement": "not_applicable_fixture"
+      },
+      "version": 2
+    }
+  ],
+  "evidence_sample": [
+    {
+      "evidence": {
+        "id": "E-b608974dfb8b598580ebdb7e-0",
+        "paragraph": 0,
+        "product": "pgvector",
+        "session_id": "397cfa87ddb048409244d479c2258126",
+        "snapshot_id": "b608974dfb8b598580ebdb7e",
+        "status": "fulltext",
+        "text": "部署方式：【测试设定】pgvector的部署方式应根据用户条件进一步检查；不代表真实产品事实。"
+      },
+      "source": {
+        "content_hash": "fc07ee6941c50e8c50e5c4f3fae799efdb111ca289a586c31af35f0a162fd81b",
+        "content_path": "fc07ee6941c50e8c50e5c4f3fae799efdb111ca289a586c31af35f0a162fd81b.txt",
+        "document_version": "fixture-1",
+        "duplicate_of": null,
+        "id": "b608974dfb8b598580ebdb7e",
+        "model_mode": "fixture",
+        "original_url": null,
+        "product": "pgvector",
+        "published_at": null,
+        "requested_version": null,
+        "retrieved_at": "2026-10-14T08:47:37.399988+00:00",
+        "sensitive": false,
+        "session_id": "397cfa87ddb048409244d479c2258126",
+        "source_type": "fixture",
+        "status": "fulltext",
+        "summary": "",
+        "title": "合成测试文档：pgvector",
+        "url": "https://fixtures.example.org/pgvector/documentation"
+      },
+      "snapshot_text": "部署方式：【测试设定】pgvector的部署方式应根据用户条件进一步检查；不代表真实产品事实。\n\n已有技术栈：【测试设定】pgvector的已有技术栈应根据用户条件进一步检查；不代表真实产品事实。\n\n检索与过滤：【测试设定】pgvector的检索与过滤应根据用户条件进一步检查；不代表真实产品事实。\n\n维护要求：【测试设定】pgvector的维护要求应根据用户条件进一步检查；不代表真实产品事实。\n\n扩展方式：【测试设定】pgvector的扩展方式应根据用户条件进一步检查；不代表真实产品事实。"
+    }
+  ],
+  "assertions_passed": true,
+  "note": "HTTP闭环验证；模型模式以health为准，不将fixture当作真实模型能力。"
+}

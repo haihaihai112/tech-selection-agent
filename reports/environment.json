@@ -1,0 +1,14 @@
+{
+  "generated_at": "2026-09-21T10:00:11.430040+00:00",
+  "python": "3.11.16",
+  "platform": "Windows-10-10.0.22631-SP0",
+  "dependencies": {
+    "fastapi": "0.141.1",
+    "langgraph": "1.2.11",
+    "gradio": "5.50.0",
+    "openai": "2.54.0",
+    "pydantic": "2.12.3",
+    "httpx": "0.28.1",
+    "pytest": "9.1.1"
+  }
+}

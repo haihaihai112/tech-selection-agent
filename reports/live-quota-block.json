@@ -1,0 +1,7 @@
+{
+  "model": "qwen3.6-plus",
+  "http_status": 403,
+  "code": "AllocationQuota.FreeTierOnly",
+  "observed_during": "live-demo and subsequent minimal diagnostic",
+  "result": "free quota exhausted; account settings unchanged"
+}

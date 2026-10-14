@@ -1,0 +1,40 @@
+{
+  "observed_at": "2026-09-21T08:45:02.272571+00:00",
+  "config": {
+    "mode": "live",
+    "model": "qwen3.6-plus",
+    "llm_configured": true,
+    "search_configured": true,
+    "search_limit": 18,
+    "read_limit": 24,
+    "research_steps": 8,
+    "repair_rounds": 2,
+    "task_timeout": 300.0
+  },
+  "model": {
+    "ok": true
+  },
+  "search": {
+    "ok": true,
+    "result_count": 5
+  },
+  "page": {
+    "ok": true,
+    "evidence_count": 5,
+    "source_url": "https://www.enterprisedb.com/docs/pg_extensions/pgvector"
+  },
+  "usage": {
+    "search_calls": 1,
+    "read_calls": 1,
+    "model_calls": 1,
+    "prompt_tokens": 320,
+    "completion_tokens": 24,
+    "reused_snapshots": 0,
+    "failed_calls": 0,
+    "token_measurement": "provider_reported",
+    "llm_cost_cny": null,
+    "search_cost_usd": null,
+    "cost_note": "按配置单价与请求数估算，失败调用是否计费以供应商账单为准；币种不混加。"
+  },
+  "ready_for_demo": true
+}
